@@ -30,9 +30,9 @@ public class CPGenT
         System.out.print("Generating the Menu ...");
         new MenuGenerator("Menu.html", conference, rooms, days, (ArrayList<Period>) timeperiods, sessions, sponsors);
         System.out.println("done");
-        System.out.print("Generating the Doors Menu ...");
-        new DoorProgramGenerator("DoorsMenu.html", conference, rooms, days, (ArrayList<Period>) timeperiods, sessions, sponsors);
-        System.out.println("done");
+        //System.out.print("Generating the Doors Menu ...");
+       // new DoorProgramGenerator("DoorsMenu.html", conference, rooms, days, (ArrayList<Period>) timeperiods, sessions, sponsors);
+        //S/stem.out.println("done");
 
     }
 

@@ -13,9 +13,9 @@
 		<name>BIRTE</name>
 		<location>
 			<room>Diamond 1</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>BIRTE Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>300</id>
 			<link>none</link>
@@ -28,9 +28,9 @@
 		<name>Bringing the Value of Big Data to Users</name>
 		<location>
 			<room>Diamond 2</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Bringing the Value of Big Data to Users Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>301</id>
 			<link>none</link>
@@ -43,9 +43,9 @@
 		<name>IMDM</name>
 		<location>
 			<room>Diamond 3</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>IMDM Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>302</id>
 			<link>http://www-db.in.tum.de/hosted/imdm2014/</link>
@@ -58,9 +58,9 @@
 		<name>ADMS</name>
 		<location>
 			<room>Diamond 4</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>ADMS Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>303</id>
 			<link>www.adms-conf.org</link>
@@ -73,9 +73,9 @@
 		<name>PhD workshop</name>
 		<location>
 			<room>Diamond 5</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>PhD workshop Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>304</id>
 			<link>none</link>
@@ -85,16 +85,50 @@
 	</slot>
 </period>
 <period>
+	<id>D0F1900T2100</id>
+	<name>Monday Sep 1st 19:00-21:00</name>
+	<slot>
+		<id>D0F1900T2100R0</id>
+		<name>Welcome Reception: Welcome Reception</name>
+		<location>
+			<room>Crystal</room>
+			<map>crystal.jpg</map>
+		</location>
+		<chair>Welcome Reception</chair>
+	</slot>
+</period>
+<period>
 	<id>D1F830T1000</id>
 	<name>Tuesday Sep 2nd 08:30-10:00</name>
 	<slot>
 		<id>D1F830T1000R0</id>
-		<name>Plenary 1</name>
+		<name>Industrial Keynote: Hasso Plattner; Academic Keynote: Volker Markl</name>
 		<location>
 			<room>Crystal</room>
-			<map>TBD.txt</map>
+			<map>crystal.jpg</map>
 		</location>
-		<chair>Plenary 1 Chair</chair>
+		<chair>0</chair>
+		<paper>
+			<id>401</id>
+			<link>none</link>
+			<title>The Impact of Columnar In-Memory Databases on Enterprise Systems</title>
+			<authors>Hasso Plattner, University of Potsdam</authors>
+			<abstract>Five years ago I proposed a common database approach for transaction processing and analytical systems using a columnar in-memory database, disputing the common belief that column stores are not suitable for transactional workloads. Today, the concept has been widely adopted in academia and industry and it is proven that it is feasible to run analytical queries on large data sets directly on a redundancy-free schema, eliminating the need to maintain pre-built aggregate tables during data entry transactions. The resulting reduction in transaction complexity leads to a dramatic simplification of data models and applications, redefining the way we build enterprise systems. First analyses of productive applications adopting this concept confirm that system architectures enabled by in-memory column stores are conceptually superior for business transaction processing compared to row-based approaches. Additionally, our analyses show a shift of enterprise workloads to even more read-oriented processing due to the elimination of updates of transaction-maintained aggregates.</abstract>
+			<authorInfo>
+				<photo>hasso.png</photo>
+				<bio>Prof. Dr. h.c. mult. Hasso Plattner is one of the co-founders of SAP AG and has been Chairman of the Supervisory Board since May 2003. In this role and as Chief Software Advisor, he concentrates on defining the medium- and longterm technology strategy and direction of SAP. He also heads the Technology Committee of the SAP Supervisory Board. Hasso Plattner received his Master¡¯s Degree in Communications Engineering from the University of Karlsruhe. In 1990, the University of Saarbr¨¹cken awarded him an honorary doctorate and in 1994, he was granted an honorary full professorship. In 1997, as chairman of SAP America, Inc., co-chairman of SAP and the chief architect of SAP R/3, Hasso Plattner received the Information Technology Leadership Award for Global Integration as part of the Computerworld Smithsonian Awards Program. In 1998, he was inducted into the German Hall of Fame. In 2002, Hasso Plattner was appointed Honorary Doctor, and in 2004 Honorary Professor by the University of Potsdam. Hasso Plattner also founded the Hasso Plattner Institute (HPI) for IT Systems Engineering at the University of Potsdam in 1998 with the largest single private contribution to a university ever made in Germany. Through his continuing financial support, he is helping the HPI in its efforts to become a center for the education of world-class software specialists.</bio>
+			</authorInfo>
+		</paper>
+		<paper>
+			<id>402</id>
+			<link>none</link>
+			<title>Breaking the Chains: On Declarative Data Analysis and Data Independence in the Big Data Era</title>
+			<authors>Volker Markl, Technische Universität Berlin</authors>
+			<abstract>Data management research, systems, and technologies have drastically improved the availability of data analysis capabilities, particularly for non-experts, due in part to low-en-try barriers and reduced ownership costs (e.g., for data management infrastructures and applications). Major reasons for the widespread success of database systems and today’s multi-billion dollar data management market include data independence, separating physical representation and storage from the actual information, and declarative languages, separating the program specification from its intended execution environment. In contrast, today’s big data solutions do not offer data independence and declarative specification. As a result, big data technologies are mostly employed in newly-established companies with IT-savvy employees or in large well-established companies with big IT departments. We argue that current big data solutions will continue to fall short of widespread adoption, due to usability problems, despite the fact that in-situ data analytics technologies achieve a good degree of schema independence. In particular, we consider the lack of a declarative specification to be a major road-block, contributing to the scarcity in available data scientists available and limiting the application of big data to the IT-savvy industries. In particular, data scientists currently have to spend a lot of time on tuning their data analysis programs for specific data characteristics and a specific execution environment. We believe that the research com-munity needs to bring the powerful concepts of declarative specification to current data analysis systems, in order to achieve the broad big data technology adoption and effectively deliver the promise that novel big data technologies offer.</abstract>
+			<authorInfo>
+				<photo>volker.jpg</photo>
+			</authorInfo>
+		</paper>
 	</slot>
 </period>
 <period>
@@ -105,9 +139,9 @@
 		<name>Papers 20.2: Graph Data II</name>
 		<location>
 			<room>Diamond 1</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 20.2 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>214</id>
 			<link>none</link>
@@ -153,12 +187,12 @@
 	</slot>
 	<slot>
 		<id>D1F1030T1215R2</id>
-		<name>Papers 2: Data Mining</name>
+		<name>Papers 2: OLAP</name>
 		<location>
 			<room>Diamond 2</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 2 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>101</id>
 			<link>http://www.vldb.org/pvldb/vol7/p109-eravci.pdf</link>
@@ -204,21 +238,49 @@
 	</slot>
 	<slot>
 		<id>D1F1030T1215R3</id>
-		<name>Industrial 1</name>
+		<name>Industrial 1: Joins</name>
 		<location>
 			<room>Diamond 3</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Industrial 1 Chair</chair>
+		<chair>0</chair>
+		<paper>
+			<id>701</id>
+			<link>none</link>
+			<title>Joins on Encoded and Partitioned Data</title>
+			<authors>Jae-Gil Lee* (KAIST)*),Gopi Attaluri (IBM Software Group)),Ronald Barber (IBM Almaden Research Center)),Naresh Chainani (IBM Software Group)),Oliver Draese (IBM Software Group)),Frederick Ho (IBM Informix)),Stratos Idreos (Harvard University)),Min-Soo Kim (DGIST)),Sam Lightstone (IBM Software Group)),Guy Lohman (IBM Almaden Research Center)),Konstantinos Morfonios (Oracle)),Keshava Murthy (IBM Informix)),Ippokratis Pandis (IBM Almaden)),Lin Qiao (LinkedIn)),Vijayshankar Raman (IBM Almaden Research Center)),Vincent Kulandai Samy (IBM Almaden Research Center)),Richard Sidle (IBM Almaden Research Center)),Knut Stolze (IBM Software Group)),Liping Zhang (IBM Software Group))</authors>
+			<abstract>Compression has historically been used to reduce the cost of storage, I/Os from that storage, and buffer pool utilization, at the expense of the CPU required to decompress data every time it is queried. However, significant additional CPU efficiencies can be achieved by deferring decompression as late in query processing as possible and performing query processing operations directly on the still-compressed data. In this paper, we investigate the benefits and challenges of performing joins on compressed (or encoded) data. We demonstrate the benefit of independently optimizing the compression scheme of each join column, even though join predicates relating values from multiple columns may require translation of the encoding of one join column into the encoding of the other. We also show the benefit of compressing "payload" data other than the join columns "on the fly," to minimize the size of hash tables used in the join. By partitioning the domain of each column and defining separate dictionaries for each partition, we can achieve even better overall compression as well as increased flexibility in dealing with new values introduced by updates. Instead of decompressing both join columns participating in a join to resolve their different compression schemes, our system performs a light-weight mapping of only qualifying rows from one of the join columns to the encoding space of the other at run time. Consequently, join predicates can be applied directly on the compressed data. We call this procedure encoding translation. Two alternatives of encoding translation are developed and compared in the paper. We provide a comprehensive evaluation of these alternatives using product implementations of each on the TPC-H data set, and demonstrate that performing joins on encoded and partitioned data achieves both superior performance and excellent compression.</abstract>
+		</paper>
+		<paper>
+			<id>702</id>
+			<link>none</link>
+			<title>Of Snowstorms and Bushy Trees</title>
+			<authors>Rafi Ahmed* (Oracle)*),Rajkumar Sen (Oracle USA)),Meikel Poess (Oracle)),Sunil Chakkappen (Oracle USA))</authors>
+			<abstract>Many workloads for analytical processing in commercial RDBMSs are dominated by snowstorm queries, which are characterized by references to multiple large fact tables and their associated smaller dimension tables. This paper describes a technique for bushy join tree optimization for snowstorm queries in Oracle database system. This technique generates bushy join trees containing subtrees that produce substantially reduced sets of rows and, therefore, their joins with other subtrees are generally much more efficient than joins in the left-deep trees. The generation of bushy join trees within an existing commercial physical optimizer requires extensive changes to the optimizer. Further, the optimizer will have to consider a large join permutation search space to generate efficient bushy join trees. The novelty of the approach is that bushy join trees can be generated outside the physical optimizer using logical query transformation that explores a considerably pruned search space. The paper describes an algorithm for generating optimal bushy join trees for snowstorm queries using an existing query transformation framework. It also presents performance results for this optimization, which show significant execution time improvements.</abstract>
+		</paper>
+		<paper>
+			<id>703</id>
+			<link>none</link>
+			<title>Execution Primitives for Scalable Joins and Aggregations in Map Reduce</title>
+			<authors>Srinivas Vemuri (Link)),Maneesh Varshney (LinkedIn)),Krishna Puttaswamy* (LinkedIn)*),Rui Liu (LinkedIn))</authors>
+			<abstract>Analytics on Big Data is critical to derive business insights and drive innovation in today's Internet companies. Such analytics involve complex computations on large datasets, and are typically performed on MapReduce based frameworks such as Hive and Pig. However, in our experience, these systems are still quite limited in performing at scale. In particular, calculations that involve complex joins and aggregations, e.g. statistical calculations, scale poorly on these systems. In this paper we propose novel primitives for scaling such calculations. We propose a new data model for organizing datasets into calculation data units that are organized based on user-defined cost functions. We propose new operators that take advantage of these organized data units to significantly speed up joins and aggregations. Finally, we propose strategies for dividing the aggregation load uniformly across worker processes that are very effective in avoiding skews and reducing (or in some cases even removing) the associated overheads. We have implemented all our proposed primitives in a framework called Rubix, which has been in production at LinkedIn for nearly a year. Rubix powers several applications and processes TBs of data each day. We have seen remarkable improvements in speed and cost of complex calculations due to these primitives.</abstract>
+		</paper>
+		<paper>
+			<id>704</id>
+			<link>none</link>
+			<title>Advanced Join Strategies for Large-Scale Distributed Computation</title>
+			<authors>Nico Bruno* (Microsoft)*),YONGCHUL KWON (Microsoft)),Ming-Chuan Wu (Microsoft))</authors>
+			<abstract>Companies providing cloud-scale data services have increasing needs to store and analyze massive data sets (e.g., search logs, click streams, and web graph data). For cost and performance reasons, processing is typically done on large clusters of thousands of commodity machines by using high level scripting languages. In the recent past, there has been significant progress in adapting well-known techniques from traditional relational DBMSs to this new scenario. However, important challenges remain open. In this paper we study the very common join operation, discuss some unique challenges in the large-scale distributed scenario, and explain how to efficiently and robustly process joins in a distributed way. Specifically, we introduce novel execution strategies that leverage opportunities not available in centralized scenarios, and others that robustly handle data skew. We report experimental validations of our approaches on Scope production clusters, which power the Applications and Services Group at Microsoft.</abstract>
+		</paper>
 	</slot>
 	<slot>
 		<id>D1F1030T1215R4</id>
 		<name>Papers 14: NOSQL and Map-Reduce</name>
 		<location>
 			<room>Diamond 4</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 14 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>177</id>
 			<link>http://www.vldb.org/pvldb/vol7/p145-wang.pdf</link>
@@ -267,14 +329,14 @@
 		<name>Papers 11: Social and Recommender Systems</name>
 		<location>
 			<room>Diamond 5</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 11 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>161</id>
 			<link>http://www.vldb.org/pvldb/vol7/p229-budak.pdf</link>
 			<title>GeoScope: Online detection of GeoCorrelated Information Trends In Social Networks</title>
-			<authors>Ceren Budak* (Microsoft Research), Theodore Georgiou (University of California Santa Barbara), Divyakant Agrawal (University of California Santa Barbara), Amr El Abbadi (University of California Santa Barbara)</authors>
+			<authors>Ceren Budak* (Microsoft Research), Theodore Georgiou, Divyakant Agrawal, Amr El Abbadi$$$$$$$)</authors>
 			<abstract>The First  Law of Geography states "Everything is related to everything else, but near things are more related than distant things". This spatial significance has implications in various applications, trend detection being one of them. In this paper we propose a new algorithmic tool, GeoScope, to detect geo-trends. GeoScope is a data streams solution that detects correlations between topics and locations in a sliding window, in addition to analyzing topics and locations independently. GeoScope offers theoretical guarantees for detecting all trending correlated pairs while requiring only sublinear space and running time. We perform various human validation tasks to demonstrate the value of GeoScope. The results show that human judges prefer GeoScope to the best performing baseline solution 4:1 in terms of the geographical significance of the presented information. As the Twitter analysis demonstrates, GeoScope successfully filters out topics without geo-intent and detects various local interests such as emergency events, political demonstrations or cultural events. Experiments on Twitter show that GeoScope has perfect recall and near-perfect precision.</abstract>
 		</paper>
 		<paper>
@@ -295,7 +357,7 @@
 			<id>164</id>
 			<link>http://www.vldb.org/pvldb/vol7/p377-korula.pdf</link>
 			<title>An efficient reconciliation algorithm for social networks</title>
-			<authors>Silvio Lattanzi* (Google), Nitish Korula (Google)</authors>
+			<authors>Silvio Lattanzi* (Google), Nitish Korula$$$$$$$)</authors>
 			<abstract>People today typically use multiple online social networks (Facebook, Twitter, Google+, LinkedIn, etc.). Each online network represents a subset of their “real” ego-networks. An interesting and challenging problem is to reconcile these on- line networks, that is, to identify all the accounts belonging to the same individual. Besides providing a richer under- standing of social dynamics, the problem has a number of practical applications. At first sight, this problem appears algorithmically challenging. Fortunately, a small fraction of individuals explicitly link their accounts across multiple networks; our work leverages these connections to identify a very large fraction of the network.  Our main contributions are to mathematically formalize the problem for the first time, and to design a simple, lo- cal, and efficient parallel algorithm to solve it. We are able to prove strong theoretical guarantees on the algorithm’s performance on well-established network models (Random Graphs, Preferential Attachment). We also experimentally confirm the effectiveness of the algorithm on synthetic and real social network data sets.</abstract>
 		</paper>
 		<paper>
@@ -318,27 +380,15 @@
 		<name>Tutorial 1: Causality and explanation in databases</name>
 		<location>
 			<room>Bauhinia 1</room>
-			<map>TBD.txt</map>
+			<map>bauhinia.jpg</map>
 		</location>
-		<chair>Tutorial 1 Chair</chair>
+		<chair>0</chair>
 		<paper>
-			<id>52</id>
-			<link>none</link>
-			<title>Causality and Explanations in Databases</title>
-			<authors>Alexandra Meliou, University of Massachusetts,Sudeepa Roy, University of Washington</authors>
-			<abstract>With the surge in the availability of information, there is a great demand for tools that assist users in understanding their data. While today's exploration tools rely mostly on data visualization, users often want to go deeper and understand the underlying causes of a particular observation. This tutorial surveys research on causality and explanation for data-oriented applications. We will review and summarize the research thus far into causality and explanation in the database and AI communities, giving researchers a snapshot of the current state of the art on this topic, and propose a unified framework as well as directions for future research. We will cover both the theory of causality/explanation and some applications; we also discuss the connections with other topics in database research like provenance, deletion propagation, why-not queries, and OLAP techniques.</abstract>
-			<authorInfo>
-				<photo>alexandra.jpg</photo>
-				<bio>Alexandra Meliou is an Assistant Professor in the School of Computer Science at the University of Massachusetts. She received her PhD and Masters degrees from the University of California Berkeley in 2009 and 2005 respectively. She completed her postdoctoral work in 2012 at the University of Washington. She has made contributions to the areas of provenance, causality in databases, data cleaning, and sensor networks. She received a 2008 Siebel scholarship, a 2012 Sigmod best demo award, and a 2013 Google faculty award.</bio>
-			</authorInfo>
-			<authorInfo>
-				<photo>sudeepa.jpg</photo>
-				<bio>Sudeepa Roy is a Postdoctoral Researcher in Computer Science at the University of Washington. Her current research focuses on theory and applications of causality/explanations in databases. She has also worked on provenance in databases and workflows, probabilistic databases, information extraction, and crowd sourcing. During her doctoral studies at the University of Pennsylvania, she was a recipient of the Google PhD Fellowship in structured data.</bio>
-			</authorInfo>
-			<authorInfo>
-				<photo>dan.jpg</photo>
-				<bio>Dan Suciu is a Professor in Computer Science at the University of Washington. He made contributions to semistructured data, data privacy, probabilistic databases, and causality/explanations in databases. He is a Fellow of the ACM, holds twelve US patents, received the best paper award in SIGMOD 2000 and ICDT 2013, the ACM PODS Alberto Mendelzon Test of Time Award in 2010 and in 2012, the 10 Year Most Influential Paper Award in ICDE 2013, and is a recipient of the NSF Career Award and of an Alfred P. Sloan Fellowship. He has given past tutorials in VLDB and SIGMOD (on semistructured data and XML, and on probabilistic database).</bio>
-			</authorInfo>
+			<id>801</id>
+			<link>papers/p-khan.pdf</link>
+			<title>Systems for Big Graphs</title>
+			<authors>Arijit Khan, Sameh Elnikety</authors>
+			<abstract>Graphs have become increasingly important to represent highly interconnected structures and schema-less data including the World Wide Web, social networks, knowledge graphs, genome and scientific databases, medical and government records. The massive scale of graph data easily overwhelms the main memory and computation resources on commodity servers. In these cases, achieving low latency and high throughput requires partitioning the graph and processing the graph data in parallel across a cluster of servers. However, the software and and hardware advances that have worked well for developing parallel databases and scientific applications are not necessarily effective for big-graph problems. Graph processing poses interesting system challenges: graphs represent relationships which are usually irregular and unstructured; and therefore, the computation and data access patterns have poor locality. Hence, the last few years has seen an unprecedented interest in building systems for big-graphs by various communities including databases, systems, semantic web, machine learning, and operations research. In this tutorial, we discuss the design of the emerging systems for processing of big-graphs, key features of distributed graph algorithms, as well as graph partitioning and workload balancing techniques. We emphasize the current challenges and highlight some future research directions.</abstract>
 		</paper>
 	</slot>
 	<slot>
@@ -346,9 +396,9 @@
 		<name>Demo 1</name>
 		<location>
 			<room>Pearl</room>
-			<map>TBD.txt</map>
+			<map>pearl.jpg</map>
 		</location>
-		<chair>Demo 1 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>993</id>
 			<link>none</link>
@@ -369,13 +419,6 @@
 			<title>STMaker--A System to Make Sense of Trajectory Data</title>
 			<authors>Han Su* (University of Queensland),Kai Zheng (University of Queensland),KAI ZENG (UCLA),Jiamin Huang (Nanjing University),xiaofang Zhou (University of Queensland)</authors>
 			<abstract>Widely adoption of GPS-enabled devices generates large amounts of trajectories every day. The raw trajectory data describes the movement history of moving objects by a sequence of  longitude, latitude, time-stamp  triples, which are nonintuitive for human to perceive the prominent features of the trajectory, such as where and how the moving object travels. In this demo, we present the STMaker system to help users make sense of individual trajectories. Given a trajectory, STMaker can automatically extract the significant semantic behavior of the trajectory, and summarize the behavior by a short human-readable text. In this paper, we first introduce the phrases of generating trajectory summarizations, and then show several real trajectory summarization cases.</abstract>
-		</paper>
-		<paper>
-			<id>997</id>
-			<link>none</link>
-			<title>Faster Visual Analytics through Pixel-Perfect Aggregation</title>
-			<authors>Uwe Jugel* (SAP),Zbigniew Jerzak (SAP),Gregor Hackenbroich (SAP),Volker  Markl (TU Berlin)</authors>
-			<abstract>State-of-the-art visual data analysis tools ignore bandwidth limitations. They fetch millions of records of high-volume time series data from an underlying RDBMS to eventually draw only a few thousand pixels on the screen. In this work, we demonstrate a pixel-aware big data visualization system that dynamically adapts the number of data points transmitted and thus the data rate, while preserving pixel-perfect visualizations. We show how to carefully select the data points to fetch for each pixel of a visualization, using a visualization-driven data aggregation that models the visualization process. Defining all required data reduction operators at the query level, our system trades off a few milliseconds of query execution time for dozens of seconds of data transfer time. The results are significantly reduced response times and a near real-time visualization of millions of data points. Using our pixel-aware system, the audience will be able to enjoy the speed and ease of big data visualizations and learn about the scientific background of our system through an interactive evaluation component, allowing the visitor to measure, visualize, and compare competing visualization-related data reduction techniques.</abstract>
 		</paper>
 		<paper>
 			<id>1002</id>
@@ -429,9 +472,9 @@
 		<name>Papers 24: Provenance and Scientific Data</name>
 		<location>
 			<room>Diamond 1</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 24 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>251</id>
 			<link>http://www.vldb.org/pvldb/vol7/p457-deutch.pdf</link>
@@ -464,7 +507,7 @@
 			<id>255</id>
 			<link>none</link>
 			<title>Similarity Search for Scientific Workflows</title>
-			<authors>Johannes Starlinger* (Humboldt-Universität zu Berlin), Bryan Brancotte (Université Paris-Sud), Sarah Cohen-Boulakia (Université Paris-Sud), Ulf Leser (Humboldt-Universität zu Berlin)</authors>
+			<authors>Johannes Starlinger* (Humboldt-Universität zu Berlin), Bryan Brancotte (Université Paris-Sud), Sarah Cohen-Boulakia (Université Paris-Sud), Ulf Leser$$$$$$$)</authors>
 			<abstract>With the increasing popularity of scientific workflows, public repositories are gaining importance as a means to share, find, and reuse such workflows. As the sizes of these repositories grow, methods to compare the scientific workflows stored in them become a necessity, for instance, to allow duplicate detection or similarity search. Scientific workflows are complex objects, and their comparison entails a number of distinct steps from comparing atomic elements to comparison of the workflows as a whole. Various studies have implemented methods for scientific workflow comparison and came up with often contradicting conclusions upon which algorithms work best. Comparing these results is cumbersome, as the original studies mixed different approaches for different steps and used different evaluation data and metrics. We contribute to the field (i) by disecting each previous approach into an explicitly defined and comparable set of subtasks, (ii) by comparing in isolation different approaches taken at each step of scientific workflow comparison, reporting on an number of unexpected findings, (iii) by investigating how these can best be combined into aggregated measures, and (iv) by making available a gold standard of over 2000 similarity ratings contributed by 15 workflow experts on a corpus of almost 1500 workflows and re-implementations of all methods we evaluated.</abstract>
 		</paper>
 	</slot>
@@ -473,9 +516,9 @@
 		<name>Papers 5.1: Query Processing I</name>
 		<location>
 			<room>Diamond 2</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 5.1 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>118</id>
 			<link>http://www.vldb.org/pvldb/vol7/p853-klonatos.pdf</link>
@@ -514,21 +557,45 @@
 	</slot>
 	<slot>
 		<id>D1F1345T1515R3</id>
-		<name>Local Industrial 1</name>
+		<name>Local Industrial 1: Big Data Platforms</name>
 		<location>
 			<room>Diamond 3</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Local Industrial 1 Chair</chair>
+		<chair>0</chair>
+		<paper>
+			<id>601</id>
+			<link>none</link>
+			<title>Fatman: Cost-saving and reliable archival storage based on volunteer resources</title>
+			<authors>An Qin (Baidu, Inc), Dianming Hu (Baidu, Inc), Jun Liu (Baidu, Inc), Wenjun Yang (Baidu, Inc), Dai Tan (Baidu, Inc)</authors>
+		</paper>
+		<paper>
+			<id>602</id>
+			<link>none</link>
+			<title>yzStack: Provisioning Customizable Solution for BigData</title>
+			<authors>Sai Wu (Zhejiang University) (Chun Chen (Zhejiang University) (Gang Chen (Zhejiang University) (Ke Chen (Zhejiang University) (Lidan Shou (Zhejiang University)), Hui Cao (yzBigData Co. (Ltd.)), He Bai (City Cloud Technology (Hangzhou) Co. (Ltd.))</authors>
+		</paper>
+		<paper>
+			<id>603</id>
+			<link>none</link>
+			<title>Realization of Low Cost and High Performance MySQLCloud Database</title>
+			<authors>Wei Cao (Alibaba Cloud Computing Inc.), Feng Yu (Alibaba Cloud Computing Inc.), Jiasen Xie (Alibaba Cloud Computing Inc.)</authors>
+		</paper>
+		<paper>
+			<id>604</id>
+			<link>none</link>
+			<title>Mariana: Tecent Deep Learning Platform and its Applications</title>
+			<authors>Yongqiang Zou (Tencent Inc.), Xing Jin (Tencent Inc.), Yi Li (Tencent Inc.), Zhimao Guo (Tencent Inc.), Eryu Wang (Tencent Inc.), Bin Xiao (Tencent Inc.) </authors>
+		</paper>
 	</slot>
 	<slot>
 		<id>D1F1345T1515R4</id>
 		<name>Papers 15: Cloud and Data Services</name>
 		<location>
 			<room>Diamond 4</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 15 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>183</id>
 			<link>http://www.vldb.org/pvldb/vol7/p425-anciaux.pdf</link>
@@ -570,9 +637,9 @@
 		<name>Papers 10.1: Web and Knowledge I</name>
 		<location>
 			<room>Diamond 5</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 10.1 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>151</id>
 			<link>http://www.vldb.org/pvldb/vol7/p505-gupta.pdf</link>
@@ -614,23 +681,15 @@
 		<name>Tutorial 2: Systems for Big Graphs</name>
 		<location>
 			<room>Bauhinia 1</room>
-			<map>TBD.txt</map>
+			<map>bauhinia.jpg</map>
 		</location>
-		<chair>Tutorial 2 Chair</chair>
+		<chair>0</chair>
 		<paper>
-			<id>53</id>
-			<link>none</link>
-			<title>Systems for Big Graphs</title>
-			<authors>Arijit Khan (ETH Zurich),Sameh Elnikety (Microsoft Research)</authors>
-			<abstract>Graphs have become increasingly important to represent highly interconnected structures and schema-less data including the World Wide Web, social networks, knowledge graphs, genome and scientific databases, medical and government records. The massive scale of graph data easily overwhelms the main memory and computation resources on commodity servers. In these cases, achieving low latency and high throughput requires partitioning the graph and processing the graph data in parallel across a cluster of servers. However, the software and and hardware advances that have worked well for developing parallel databases and scientific applications are not necessarily effective for big-graph problems. Graph processing poses interesting system challenges: graphs represent relationships which are usually irregular and unstructured; and therefore, the computation and data access patterns have poor locality. Hence, the last few years has seen an unprecedented interest in building systems for big-graphs by various communities including databases, systems, semantic web, machine learning, and operations research. In this tutorial, we discuss the design of the emerging systems for processing of big-graphs, key features of distributed graph algorithms, as well as graph partitioning and workload balancing techniques. We emphasize the current challenges and highlight some future research directions.</abstract>
-			<authorInfo>
-				<photo>Arijit-Khan.jpg</photo>
-				<bio>Arijit Khan is a post-doctorate researcher in the Systems group at ETH Zurich. His research interests span in the area of big-data, big-graphs, and graph systems. He received his PhD from the Department of Computer Science, University of California, Santa Barbara. Arijit is the recipient of the prestigious IBM PhD Fellowship in 2012-13. He co-presented a tutorial on emerging queries over linked data at ICDE 2012.</bio>
-			</authorInfo>
-			<authorInfo>
-				<photo>sameh-elnikety.jpg</photo>
-				<bio>Sameh Elnikety is a researcher at Microsoft Research in Redmond, Washington. He received his Ph.D. from the Swiss Federal Institute of Technology (EPFL) in Lausanne, Switzerland , and M.S. from Rice University in Houston, Texas. His research interests include distributed server systems, and database systems. Sameh’s work on database replication received the best paper award at Eurosys 2007.</bio>
-			</authorInfo>
+			<id>802</id>
+			<link>papers/UERTutorial.pdf</link>
+			<title>Uncertain Entity Resolution</title>
+			<authors>Avigdor Gal</authors>
+			<abstract>Entity resolution is a fundamental problem in data integration dealing with the combination of data from different sources to a unified view of the data. Entity resolution is inherently an uncertain process because the decision to map a set of records to the same entity cannot be made with certainty unless these are identical in all of their attributes or have a common key. In the light of recent advancement in data accumulation, management, and analytics landscape (known as big data) the tutorial re-evaluates the entity resolution process and in particular looks at best ways to handle data veracity. The tutorial ties entity resolution with recent advances in probabilistic database research, focusing on sources of uncertainty in the entity resolution process.</abstract>
 		</paper>
 	</slot>
 	<slot>
@@ -638,9 +697,16 @@
 		<name>Demo 2</name>
 		<location>
 			<room>Pearl</room>
-			<map>TBD.txt</map>
+			<map>pearl.jpg</map>
 		</location>
-		<chair>Demo 2 Chair</chair>
+		<chair>0</chair>
+		<paper>
+			<id>997</id>
+			<link>none</link>
+			<title>Faster Visual Analytics through Pixel-Perfect Aggregation</title>
+			<authors>Uwe Jugel* (SAP),Zbigniew Jerzak (SAP),Gregor Hackenbroich (SAP),Volker  Markl (TU Berlin)</authors>
+			<abstract>State-of-the-art visual data analysis tools ignore bandwidth limitations. They fetch millions of records of high-volume time series data from an underlying RDBMS to eventually draw only a few thousand pixels on the screen. In this work, we demonstrate a pixel-aware big data visualization system that dynamically adapts the number of data points transmitted and thus the data rate, while preserving pixel-perfect visualizations. We show how to carefully select the data points to fetch for each pixel of a visualization, using a visualization-driven data aggregation that models the visualization process. Defining all required data reduction operators at the query level, our system trades off a few milliseconds of query execution time for dozens of seconds of data transfer time. The results are significantly reduced response times and a near real-time visualization of millions of data points. Using our pixel-aware system, the audience will be able to enjoy the speed and ease of big data visualizations and learn about the scientific background of our system through an interactive evaluation component, allowing the visitor to measure, visualize, and compare competing visualization-related data reduction techniques.</abstract>
+		</paper>
 		<paper>
 			<id>1036</id>
 			<link>none</link>
@@ -728,9 +794,9 @@
 		<name>Papers 7.2: Memory Systems</name>
 		<location>
 			<room>Diamond 1</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 7.2 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>137</id>
 			<link>http://www.vldb.org/pvldb/vol7/p85-balkesen.pdf</link>
@@ -772,9 +838,9 @@
 		<name>Papers 6: Query Optimization</name>
 		<location>
 			<room>Diamond 2</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 6 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>128</id>
 			<link>http://www.vldb.org/pvldb/vol7/p429-giannikis.pdf</link>
@@ -816,18 +882,18 @@
 		<name>Big Data Panel</name>
 		<location>
 			<room>Diamond 3</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Big Data Panel Chair</chair>
+		<chair>0</chair>
 	</slot>
 	<slot>
 		<id>D1F1545T1715R4</id>
 		<name>Papers 13: Storage Management</name>
 		<location>
 			<room>Diamond 4</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 13 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>172</id>
 			<link>http://research.microsoft.com/apps/pubs/default.aspx?id=218305</link>
@@ -869,9 +935,9 @@
 		<name>Papers 21.2: Database Usability II</name>
 		<location>
 			<room>Diamond 5</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 21.2 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>235</id>
 			<link>http://www.vldb.org/pvldb/vol6/p1762-mottin.pdf</link>
@@ -913,23 +979,15 @@
 		<name>Tutorial 2: Systems for Big Graphs</name>
 		<location>
 			<room>Bauhinia 1</room>
-			<map>TBD.txt</map>
+			<map>bauhinia.jpg</map>
 		</location>
-		<chair>Tutorial 2 Chair</chair>
+		<chair>0</chair>
 		<paper>
-			<id>53</id>
-			<link>none</link>
-			<title>Systems for Big Graphs</title>
-			<authors>Arijit Khan (ETH Zurich),Sameh Elnikety (Microsoft Research)</authors>
-			<abstract>Graphs have become increasingly important to represent highly interconnected structures and schema-less data including the World Wide Web, social networks, knowledge graphs, genome and scientific databases, medical and government records. The massive scale of graph data easily overwhelms the main memory and computation resources on commodity servers. In these cases, achieving low latency and high throughput requires partitioning the graph and processing the graph data in parallel across a cluster of servers. However, the software and and hardware advances that have worked well for developing parallel databases and scientific applications are not necessarily effective for big-graph problems. Graph processing poses interesting system challenges: graphs represent relationships which are usually irregular and unstructured; and therefore, the computation and data access patterns have poor locality. Hence, the last few years has seen an unprecedented interest in building systems for big-graphs by various communities including databases, systems, semantic web, machine learning, and operations research. In this tutorial, we discuss the design of the emerging systems for processing of big-graphs, key features of distributed graph algorithms, as well as graph partitioning and workload balancing techniques. We emphasize the current challenges and highlight some future research directions.</abstract>
-			<authorInfo>
-				<photo>Arijit-Khan.jpg</photo>
-				<bio>Arijit Khan is a post-doctorate researcher in the Systems group at ETH Zurich. His research interests span in the area of big-data, big-graphs, and graph systems. He received his PhD from the Department of Computer Science, University of California, Santa Barbara. Arijit is the recipient of the prestigious IBM PhD Fellowship in 2012-13. He co-presented a tutorial on emerging queries over linked data at ICDE 2012.</bio>
-			</authorInfo>
-			<authorInfo>
-				<photo>sameh-elnikety.jpg</photo>
-				<bio>Sameh Elnikety is a researcher at Microsoft Research in Redmond, Washington. He received his Ph.D. from the Swiss Federal Institute of Technology (EPFL) in Lausanne, Switzerland , and M.S. from Rice University in Houston, Texas. His research interests include distributed server systems, and database systems. Sameh’s work on database replication received the best paper award at Eurosys 2007.</bio>
-			</authorInfo>
+			<id>802</id>
+			<link>papers/UERTutorial.pdf</link>
+			<title>Uncertain Entity Resolution</title>
+			<authors>Avigdor Gal</authors>
+			<abstract>Entity resolution is a fundamental problem in data integration dealing with the combination of data from different sources to a unified view of the data. Entity resolution is inherently an uncertain process because the decision to map a set of records to the same entity cannot be made with certainty unless these are identical in all of their attributes or have a common key. In the light of recent advancement in data accumulation, management, and analytics landscape (known as big data) the tutorial re-evaluates the entity resolution process and in particular looks at best ways to handle data veracity. The tutorial ties entity resolution with recent advances in probabilistic database research, focusing on sources of uncertainty in the entity resolution process.</abstract>
 		</paper>
 	</slot>
 	<slot>
@@ -937,9 +995,9 @@
 		<name>Demo 3</name>
 		<location>
 			<room>Pearl</room>
-			<map>TBD.txt</map>
+			<map>pearl.jpg</map>
 		</location>
-		<chair>Demo 3 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>1080</id>
 			<link>none</link>
@@ -1020,16 +1078,42 @@
 	</slot>
 </period>
 <period>
+	<id>D1F1715T1730</id>
+	<name>Tuesday Sep 2nd 17:15-17:30</name>
+	<slot>
+		<id>D1F1715T1730R0</id>
+		<name>Buses to West Lake Show: Buses to West Lake Show</name>
+		<location>
+			<room>Crystal</room>
+			<map>crystal.jpg</map>
+		</location>
+		<chair>Buses to West Lake Show</chair>
+	</slot>
+</period>
+<period>
 	<id>D2F830T1000</id>
 	<name>Wednesday Sep 3rd 08:30-10:00</name>
 	<slot>
 		<id>D2F830T1000R0</id>
-		<name>Plenary 2</name>
+		<name>Industrial Keynote: Shivakumar Venkataraman;Academic Keynote: Divyakant Agrawal</name>
 		<location>
 			<room>Crystal</room>
-			<map>TBD.txt</map>
+			<map>crystal.jpg</map>
 		</location>
-		<chair>Plenary 2 Chair</chair>
+		<chair>Industrial Keynote: Shivakumar Venkataraman; Academic Keynote: Divyakant Agrawal</chair>
+		<paper>
+			<id>400</id>
+			<link>none</link>
+			<title>Datacenters as Computers: Google Engineering &amp; Database Research Perspectives</title>
+			<authors>Shivakumar Venkataraman (Google),Divyakant Agrawal (University of California at Santa Barbara)</authors>
+			<abstract>In this collaborative keynote address, we will share Google's experience in building a scalable data infrastructure that leverages datacenters for managing Google's advertising data over the last decade. In order to support the massive online advertising platform at Google, the data infrastructure must simultaneously support both transactional and analytical workloads. The focus of this talk will be to highlight how the datacenter architecture and the cloud computing paradigm has enabled us to manage the exponential growth in data volumes and user queries, make our services highly available and fault tolerant to massive datacenter outages, and deliver results with very low latencies. We note that other Internet companies have also undergone similar growth in data volumes and user queries. In fact, this phenomenon has resulted in at least two new terms in the technology lexicon: big data and cloud computing. Cloud computing (and datacenters) have been largely responsible for scaling the data volumes from terabytes range just a few years ago to now reaching in the exabyte range over the next couple of years. Delivering solutions at this scale that are fault-tolerant, latency sensitive, and highly available requires a combination of research advances with engineering ingenuity at Google and elsewhere. Next, we will try to answer the following question: is a datacenter just another (very large) computer? Or, does it fundamentally change the design principles for data-centric applications and systems. We will conclude with some of the unique research challenges that need to be addressed in order to sustain continuous growth in data volumes while supporting high throughput and low latencies.</abstract>
+			<authorInfo>
+				<photo>shivav-2.png</photo>
+			</authorInfo>
+			<authorInfo>
+				<photo>agrawal.jpg</photo>
+			</authorInfo>
+		</paper>
 	</slot>
 </period>
 <period>
@@ -1040,9 +1124,9 @@
 		<name>Papers 18: Paths and Reachability</name>
 		<location>
 			<room>Diamond 1</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 18 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>198</id>
 			<link>http://www.vldb.org/pvldb/vol6/p1546-tao.pdf</link>
@@ -1075,7 +1159,7 @@
 			<id>202</id>
 			<link>http://www.vldb.org/pvldb/vol7/p205-niedermayer.pdf</link>
 			<title>Probabilistic Nearest Neighbor Queries on Uncertain Moving Object Trajectories</title>
-			<authors>Johannes Niedermayer* (LMU Munich), Andreas Züfle, Tobias Emrich (University of Munich), Matthias Renz (Ludwig-Maximilians University Munich), Nikos Mamoulis (University of Hong Kong), Lei Chen (Hong Kong University of Science and Technology), Hans-Peter Kriegel (Ludwig Maximilian University of Munich)</authors>
+			<authors>Johannes Niedermayer* (LMU Munich), Andreas Züfle, Tobias Emrich (University of Munich), Matthias Renz (Ludwig-Maximilians University Munich), Nikos Mamoulis (University of Hong Kong), Lei Chen (Hong Kong University of Science and Technology), Hans-Peter Kriegel$$$$$$$)</authors>
 			<abstract>Nearest neighbor (NN) queries in trajectory databases have received significant attention in the past, due to their applications in spatio-temporal data analysis. More recent work has considered the realistic case where the trajectories are uncertain; however, only simple uncertainty models have been proposed, which do not allow for accurate probabilistic search. In this paper, we fill this gap by addressing probabilistic nearest neighbor queries in databases with uncertain trajectories modeled by stochastic processes, specifically the Markov chain model. We study three nearest neighbor query semantics that take as input a query state or trajectory $q$ and a time interval, and theoretically evaluate their runtime complexity. Furthermore we propose a sampling approach which uses Bayesian inference to guarantee that sampled trajectories conform to the observation data stored in the database. This sampling approach can be used in Monte-Carlo based approximation solutions. We include an extensive experimental study to support our theoretical results.</abstract>
 		</paper>
 		<paper>
@@ -1091,9 +1175,9 @@
 		<name>Papers 16: Text, XML, and String Data</name>
 		<location>
 			<room>Diamond 2</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 16 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>188</id>
 			<link>http://www.vldb.org/pvldb/vol6/p1786-duan.pdf</link>
@@ -1139,21 +1223,49 @@
 	</slot>
 	<slot>
 		<id>D2F1030T1215R3</id>
-		<name>Industrial 2</name>
+		<name>Industrial 2: Transactions</name>
 		<location>
 			<room>Diamond 3</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Industrial 2 Chair</chair>
+		<chair>0</chair>
+		<paper>
+			<id>709</id>
+			<link>none</link>
+			<title>Reducing Database Locking Contention Through Multi-version Concurrency</title>
+			<authors>Mohammad Sadoghi* (IBM T.J. Watson Research Cente)*),Mustafa Canim (IBM T.J. Watson Research Center)),Bishwaranjan   Bhattacharjee  (IBM T.J. Watson Research Center)),Fabian Nagel (University of Edinburgh)),Kenneth Ross (Columbia University))</authors>
+			<abstract>In multi-version databases, updates and deletions of records by transactions require appending a new record to tables rather than performing in-place updates. This mechanism incurs non-negligible performance overhead in the presence of multiple indexes on a table, where changes need to be propagated to all indexes. Additionally, an uncommitted record update will block other active transactions from using the index to fetch the most recently committed values for the updated record. In general, in order to support snapshot isolation and/or multi-version concurrency, either each active transaction is forced to search a database temporary area (e.g., rollback segments) to fetch old values of desired records, or each transaction is forced to scan the entire table to find the older versions of the record in a multi-version database (in the absence of specialized temporal indexes). In this work, we describe a novel kV-Indirection structure to enable efficient (parallelizable) optimistic and pessimistic multi-version concurrency control by utilizing the old versions of records (at most two versions of each record) to provide direct access to the recent changes of records without the need of temporal indexes. As a result, our technique results in higher degree of concurrency by reducing the clashes between readers and writers of data and avoiding extended lock delays. We have a working prototype of our concurrency model and kV-Indirection structure in a commercial database and conducted an extensive evaluation to demonstrate the benefits of our multi-version concurrency control, and we obtained orders of magnitude speed up over the single-version concurrency control.</abstract>
+		</paper>
+		<paper>
+			<id>710</id>
+			<link>none</link>
+			<title>TPC-DI: The First Industry Benchmark for Data Integration</title>
+			<authors>Meikel Poess* (Oracle)*),Tilmann Rabl (University of Toronto)),Hans-Arno Jacobsen (University of Toronto)),Brian Caufield (IBM))</authors>
+			<abstract>Historically, the process of synchronizing a decision support system with data from operational systems has been referred to as Extract, Transform, Load (ETL) and the tools supporting such process have been referred to as ETL tools. Recently, ETL was replaced by the more comprehensive acronym, data integration (DI). DI describes the process of extracting and combining data from a variety of data source formats, transforming that data into a unified data model representation and loading it into a data store. This is done in the context of a variety of scenarios, such as data acquisition for business intelligence, analytics and data warehousing, but also synchronization of data between operational applications, data migrations and conversions, master data management, enterprise data sharing and delivery of data services in a service-oriented architecture context, amongst others. With these scenarios relying on up-to-date information it is critical to implement a highly performing, scalable and easy to maintain data integration system. This is especially important as the complexity, variety and volume of data is constantly increasing and performance of data integration systems is becoming very critical. Despite the significance of having a highly performing DI system, there has been no industry standard for measuring and comparing their performance. The TPC, acknowledging this void, has released TPC-DI, an innovative benchmark for data integration. This paper motivates the reasons behind its development, describes its main characteristics including workload, run rules, metric, and explains key decisions.</abstract>
+		</paper>
+		<paper>
+			<id>711</id>
+			<link>none</link>
+			<title>Fuxi: Fault Tolerant Resource Management and Job Scheduling System at Internet Scale</title>
+			<authors>Zhuo Zhang (Alibaba Cloud Computing)),Chao Li (Alibaba Cloud Computing)),Yangyu Tao (Alibaba Cloud Computing)),Renyu  Yang* (Beihang University)*),Jie Xu  (Beihang University (University of Leeds))</authors>
+			<abstract>Scalability and fault-tolerance are two fundamental challenges for all distributed computing at Internet scale. Despite many recent advances from both academia and industry, these two problems are still far from settled. In this paper, we present Fuxi, a resource management and job scheduling system that is capable of handling the kind of workload at Alibaba where hundreds of terabytes of data are generated and analyzed everyday to help optimize the company's business operations and user experiences. We employ several novel techniques to enable Fuxi to perform efficient scheduling of hundreds of thousands of concurrent tasks over large clusters with thousands of nodes: 1) an incremental resource management protocol that supports multi-dimensional resource allocation and elastic quota; 2) user-transparent failure recovery where failures of any Fuxi components will not impact the execution of user jobs; and 3) an effective faulty detection mechanism and multi-level blacklisting that prevents them from affecting job execution. Our evaluation results demonstrate that 95% and 91% scheduled CPU/memory utilization can be fulfilled under synthetic workloads, and Fuxi is capable of achieving 2.36TB/minute throughput in GraySort. Additionally, the same Fuxi job only experiences approximately 16% slowdown under a 5% fault-injection rate. Fuxi has been deployed in our production environment since 2009, and it now manages hundreds of thousands of server nodes.</abstract>
+		</paper>
+		<paper>
+			<id>712</id>
+			<link>none</link>
+			<title>CAP limits in telecom subscriber database design</title>
+			<authors>Javier Arauz* (Ericsson)*</authors>
+			<abstract>While the notion of a Distributed DBMS has been familiar to the IT industry for several decades, within telecom networks the subscriber data management based on DDBMS technology is a novel addition to a service provider's infrastructure. Service providers are used to telecom networks that are efficient, reliable and easy to maintain and operate, in part thanks to the node model used in designing such networks. A DDBMS spanning a large geographical area however incurs into distributed systems issues not previously seen in telecom networks. Identifying and delivering the right set of trade-offs that satisfies the service providers’ needs while staying within the known physical bounds of a distributed system is therefore crucial if DDBMS are to conquer the subscriber management space within telecom networks.</abstract>
+		</paper>
 	</slot>
 	<slot>
 		<id>D2F1030T1215R4</id>
 		<name>Papers 3: Privacy and Security</name>
 		<location>
 			<room>Diamond 4</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 3 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>107</id>
 			<link>http://www.vldb.org/pvldb/vol6/p1594-rekatsinas.pdf</link>
@@ -1202,9 +1314,9 @@
 		<name>Papers 22: Data quality</name>
 		<location>
 			<room>Diamond 5</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 22 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>240</id>
 			<link>http://www.vldb.org/pvldb/vol6/p1846-altwaijry.pdf</link>
@@ -1253,23 +1365,15 @@
 		<name>Tutorial 3: Knowledge Bases in the Age of Big Data Analytics</name>
 		<location>
 			<room>Bauhinia 1</room>
-			<map>TBD.txt</map>
+			<map>bauhinia.jpg</map>
 		</location>
-		<chair>Tutorial 3 Chair</chair>
+		<chair>0</chair>
 		<paper>
-			<id>54</id>
-			<link>none</link>
+			<id>803</id>
+			<link>papers/p-suchanek.pdf</link>
 			<title>Knowledge Bases in the Age of Big Data Analytics</title>
-			<authors>Fabian M. Suchanek (Telecom ParisTech University),Gerhard Weikum (Max Planck Institute for Informatics)</authors>
+			<authors>Fabian Suchanek, Gerhard Weikum</authors>
 			<abstract>This tutorial gives an overview on state-of-the-art methods for the automatic construction of large knowledge bases and harnessing them for data and text analytics. It covers both big-data methods for building knowledge bases and knowledge bases being assets for big-data applications. The tutorial also points out challenges and research opportunities.</abstract>
-			<authorInfo>
-				<photo>fabiansuchanek.jpg</photo>
-				<bio>Fabian M. Suchanek is an associate professor at the Télécom ParisTech University in Paris, France. He obtained his PhD at the Max Planck Institute for Informatics in 2008, which earned him an honorable mention for the ACM SIGMOD Jim Gray Dissertation Award. Later he was a postdoc at Microsoft Research Search Labs in Silicon Valley (in the group of Rakesh Agrawal) and in the WebDam team at INRIA Saclay/France (in the group of Serge Abiteboul), and led an independent Otto Hahn Research Group, funded by the Max Planck Society. Fabian is the main architect of the YAGO ontology, one of the largest public knowledge bases.</bio>
-			</authorInfo>
-			<authorInfo>
-				<photo>gerhardweikum.jpg</photo>
-				<bio>Gerhard Weikum is a scientific director at the Max Planck Institute for Informatics in Saarbruecken, Germany, where he is leading the department on databases and information systems. He co-authored a comprehensive textbook on transactional systems, received the VLDB 10-Year Award for his work on automatic DB tuning, and is one of the creators of the YAGO knowledge base. Gerhard is an ACM Fellow, a member of several scientific academies in Germany and Europe, and a recipient of a Google Focused Research Award, an ACM SIGMOD Contributions Award, and an ERC Synergy Grant.</bio>
-			</authorInfo>
 		</paper>
 	</slot>
 	<slot>
@@ -1277,9 +1381,9 @@
 		<name>Demo 4</name>
 		<location>
 			<room>Pearl</room>
-			<map>TBD.txt</map>
+			<map>pearl.jpg</map>
 		</location>
-		<chair>Demo 4 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>1131</id>
 			<link>none</link>
@@ -1360,9 +1464,9 @@
 		<name>Papers 20.1: Graph Data I</name>
 		<location>
 			<room>Diamond 1</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 20.1 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>209</id>
 			<link>http://www.vldb.org/pvldb/vol7/p401-yu.pdf</link>
@@ -1401,65 +1505,93 @@
 	</slot>
 	<slot>
 		<id>D2F1345T1515R2</id>
-		<name>Papers 4: Indexing</name>
+		<name>Papers 23: Benchmarking</name>
 		<location>
 			<room>Diamond 2</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 4 Chair</chair>
+		<chair>0</chair>
 		<paper>
-			<id>113</id>
-			<link>http://www.vldb.org/pvldb/vol6/p1714-kossmann.pdf</link>
-			<title>Adaptive Range Filters for Cold Data: Avoiding Trips to Siberia</title>
-			<authors>Karolina Alexiou (ETH), Donald Kossmann* (ETH), Paul Larson (Microsoft)</authors>
-			<abstract>Bloom filters are a great technique to test whether a key is notin a set of keys.  This paper presents a novel datastructure called ARF.  In a nutshell, ARFsare for range queries what Bloom filters are for point queries.  Thatis, an ARF can determine whether a set of keys does not containany keys that are part of a specific range.  This paper describes theprinciples and methods for efficient implementation ofARFs and presents the results of comprehensive experimentsthat assess the precision, space, and latency of ARFs.Furthermore, thispaper shows how ARFs can be applied to a commercial database systemthat partitions data into hot and cold regions to optimizequeries that involve only hot data.</abstract>
+			<id>246</id>
+			<link>none</link>
+			<title>QuEval: Beyond high-dimensional indexing à la carte</title>
+			<authors>Martin Schäler* (University of Magdeburg), Alexander Grebhahn (University of Passau), Reimar Schröter (University of Magdeburg), Sandro Schulze (TU Braunschweig), Veit Köppen (University of Magdeburg), Gunter Saake (University of Magdeburg)</authors>
+			<abstract>In the recent past, the amount of high-dimensional data, such as feature vectors extracted from multimedia data, increased dramatically. A large variety of indexes have been proposed to store and access such data efficiently. However, due to specific requirements of a certain use case, choosing an adequate index structure is a complex and time-consuming task. This may be due to engineering challenges or open research questions.To overcome this limitation, we present QuEval, an open-source framework that can be flexibly extended w.r.t. index structures, distance metrics, and data sets. QuEval provides a unified environment for a sound evaluation of different indexes, for instance, to support tuning of indexes. In an empirical evaluation, we show how to apply our framework, motivate benefits, and demonstrate analysis possibilities.</abstract>
 		</paper>
 		<paper>
-			<id>114</id>
-			<link>http://www.vldb.org/pvldb/vol7/p529-wang.pdf</link>
-			<title>Lightweight Indexing of Observational Data in Log-Structured Storage</title>
-			<authors>Sheng Wang (National Univ. of Singapore), David Maier (Portland State University), Beng Chin Ooi* (National University of Singapore)</authors>
-			<abstract>Huge amounts of data are being generated by sensing devices every day, recording the status of objects and the environment. Such observational data is widely used in scientific research. As the capabilities of sensors keep improving, the data produced are drastically expanding in precision and quantity, making it a write-intensive domain. Log-structured storage is capable of providing high write throughput, and hence is a natural choice for managing large-scale observational data.  In this paper, we propose an approach to indexing and querying observational data in log-structured storage. Based on key traits of observational data, we design a novel index approach called the CR-index (Continuous Range Index), which provides fast query performance without compromising write throughput. It is a lightweight structure that is fast to construct and often small enough to reside in RAM. Our experimental results show that the CR-index is superior in handling observational data compared to other indexing techniques. While our focus is scientific data, we believe our index will be effective for other applications with similar properties, such as process monitoring in manufacturing.</abstract>
+			<id>247</id>
+			<link>http://www.vldb.org/pvldb/vol6/p1882-sowell.pdf</link>
+			<title>An Experimental Analysis of Iterated Spatial Joins in Main Memory</title>
+			<authors>Benjamin Sowell* (Amiato), Marcos Vaz Salles (DIKU), Tuan Cao (Google), Alan Demers (Cornell University), Johannes Gehrke (Cornell University)</authors>
+			<abstract>Many modern applications rely on high-performance processing of spatial data. Examples include location-based services, games, virtual worlds, and scientific simulations such as molecular dynamics and behavioral simulations. These applications deal with large numbers of moving objects that continuously sense their environment, and their data access can often be abstracted as a repeated spatial join. Updates to object positions are interspersed with these join operations, and batched for performance. Even for the most demanding scenarios, the data involved in these joins fits comfortably in the main memory of a cluster of machines, and most applications run completely in main memory for performance reasons.Choosing appropriate spatial join algorithms is challenging due to the large number of techniques in the literature. In this paper, we perform an extensive evaluation of repeated spatial join algorithms for distance (range) queries in main memory. Our study is unique in breadth when compared to previous work: We implement, tune, and compare ten distinct algorithms on several workloads drawn from the simulation and spatial indexing literature. We explore the design space of both index nested loops algorithms and specialized join algorithms, as well as the use of moving object indices that can be incrementally maintained. Surprisingly, we find that when queries and updates can be batched, repeatedly re-computing the join result from scratch outperforms using a moving object index in all but the most extreme cases. This suggests that --- given the code complexity of index structures for moving objects --- specialized join strategies over simple index structures, such as Synchronous Traversal over R-Trees, should be the methods of choice for the above applications.</abstract>
 		</paper>
 		<paper>
-			<id>115</id>
-			<link>http://www.vldb.org/pvldb/vol6/p1522-rao.pdf</link>
-			<title>Bitlist: New Full-text Index for Low Space Cost and Efficient Keyword Search</title>
-			<authors>Weixiong Rao* (University of Helsinki), Lei Chen (Honk Kong University of Science and Technology), Pan Hui (HKUST (Telekom Innovation Laboratories (German,Berlin (Germany), Sasu Tarkoma (University of Helsinki (Finland)</authors>
-			<abstract>Nowadays Web search engines are experiencing significant performance challenges caused by a huge amount of Web pages and increasingly larger number of Web users. The key issue for addressing these challenges is to design a compact structure which can index Web documents with low space and meanwhile process keyword search very fast. Unfortunately, the current solutions typically separate the space optimization from the search improvement. As a result, such solutions either save space yet with search inefficiency, or allow fast keyword search but with huge space requirement. In this paper, to address the challenges, we propose a novel structure bitlist with both low space requirement and supporting fast keyword search. Specifically, based on a simple yet very efficient encoding scheme, bitlist uses a single number to encode a set of integer document IDs for low space, and adopts fast bitwise operations for very efficient boolean-based keyword search. Based on real data sets, our extensive experimental results verify that bitlist outperforms the recent proposed solution, inverted list compression [23, 22] by spending 36.71% less space and 61.91% faster processing time, and achieves comparable running time as [8] but with significantly lower space.</abstract>
+			<id>248</id>
+			<link>http://www.vldb.org/pvldb/vol7/p277-difallah.pdf</link>
+			<title>OLTP-Bench: An Extensible Testbed for Benchmarking Relational Databases</title>
+			<authors>Djellel Eddine Difallah* (University of fribourg), Andrew Pavlo (Carnegie Mellon University), Carlo Curino (Microsoft), Philippe Cudré-Mauroux (University of Fribourg)</authors>
+			<abstract>Benchmarking is an essential aspect of any database management system (DBMS) effort. Despite several recent advancements, such as pre-configured cloud database images and database-as-a-service (DBaaS) offerings, the deployment of a comprehensive testing plat- form with a diverse set of datasets and workloads is still far from being trivial. In many cases, researchers and developers are limited to a small number of workloads to evaluate the performance charac- teristics of their work. This is due to the lack of a universal bench- marking infrastructure, and to the difficulty of gaining access to real data and workloads. This results in lots of unnecessary engineer- ing efforts and makes the performance evaluation results difficult to compare. To remedy these problems, we present OLTP-Bench, an extensible “batteries included” DBMS benchmarking testbed. The key contributions of OLTP-Bench are its ease of use and extensibil- ity, support for tight control of transaction mixtures, request rates, and access distributions over time, as well as the ability to support all major DBMSs and DBaaS platforms. Moreover, it is bundled with fifteen workloads that all differ in complexity and system de- mands, including four synthetic workloads, eight workloads from popular benchmarks, and three workloads that are derived from real-world applications. We demonstrate through a comprehen- sive set of experiments conducted on popular DBMS and DBaaS offerings the different features provided by OLTP-Bench and the effectiveness of our testbed in characterizing the performance of database services.</abstract>
 		</paper>
 		<paper>
-			<id>116</id>
-			<link>http://www.vldb.org/pvldb/vol6/p1930-sundaram.pdf</link>
-			<title>Streaming Similarity Search over one Billion Tweets using Parallel Locality-Sensitive Hashing</title>
-			<authors>Narayanan Sundaram* (Intel Corporation), Aizana Turmukhametova (MIT), Nadathur Satish (Intel Corporation), Todd Mostak (Harvard), Piotr Indyk (MIT), Sam Madden, Pradeep Dubey (Intel Corporation)</authors>
-			<abstract>Finding nearest neighbors has become an important operation on databases, with applications to text search, multimedia indexing, and many other areas. One popular algorithm for similarity search, especially for high dimensional data (where spatial indexes like kd-trees do not perform well) is Locality Sensitive Hashing (LSH), an approximation algorithm for finding similar objects.In this paper, we describe a new variant of LSH, called Parallel LSH (PLSH) designed to be extremely efficient, capable of scaling out on multiple nodes and multiple cores, and which supports high-throughput streaming of new data. Our approach employs several novel ideas, including: cache-conscious hash table layout, using a 2-level merge algorithm for hash table construction; an efficient algorithm for duplicate elimination during hash-table querying; an insert-optimized hash table structure and efficient data expiration algorithm for streaming data; and a performance model that accurately estimates performance of the algorithm and can be used to optimize parameter settings. We show that on a workload where we perform similarity search on a dataset of  1 Billion tweets, with hundreds of millions of new tweets per day, we can achieve query times of 1–2.5 ms. We show that this is an order of magnitude faster than existing indexing schemes, such as inverted indexes. To the best of our knowledge, this is the fastest implementation of LSH, with table construction times up to 3.7X faster and query times that are 8.3X faster than a basic implementation.</abstract>
+			<id>249</id>
+			<link>none</link>
+			<title>SQL-on-Hadoop: Full Circle Back to Shared-Nothing Database Architectures</title>
+			<authors>Avrilia Floratou* (IBM Almaden Research Center), Umar Farooq Minhas (IBM Almaden Research Center (US), Fatma Ozcan (IBM Almaden)</authors>
+			<abstract>SQL query processing for analytics over Hadoop data has recently gained significant traction. Among many systems providing some SQL support over Hadoop, Hive is the first native Hadoop system that uses an underlying framework such as MapReduce or Tez to process SQL-like statements. Impala, on the other hand, represents the new emerging class of SQL-on-Hadoop systems that exploit a shared-nothing parallel database architecture over Hadoop. Both systems optimize their data ingestion via columnar storage, and promote different file formats: ORC and Parquet. In this paper, we compare the performance of these two systems by conducting a set of cluster experiments using a TPC-H like benchmark and two TPC-DS inspired workloads. We also closely study the I/O efficiency of their columnar formats using a set of micro-benchmarks. Our results show that Impala is 3.3X to 4.4X faster than Hive on MapReduce and 2.1X to 2.8X than Hive on Tez for the overall TPC-H experiments. Impala is also 8.2X to 10X faster than Hive on MapReduce and about 4.3X faster than Hive on Tez for the TPC-DS inspired experiments. Through detailed analysis of experimental results, we identify the reasons for this performance gap and examine the strengths and limitations of each system.</abstract>
 		</paper>
 		<paper>
-			<id>117</id>
-			<link>http://www.vldb.org/pvldb/vol7/p97-schuhknecht.pdf</link>
-			<title>The Uncracked Pieces in Database Cracking</title>
-			<authors>Felix Martin Schuhknecht* (Saarland University), Alekh Jindal (MIT), Jens  Dittrich (Saarland University)</authors>
-			<abstract>Database cracking has been an area of active research in recent years. The core idea of database cracking is to create indexes adaptively and incrementally as a side-product of query processing. Several works have proposed different cracking techniques for different aspects including updates, tuple-reconstruction, convergence, concurrency-control, and robustness. However, there is a lack of any comparative study of these different methods by an independent group. In this paper, we conduct an experimental study on database cracking. Our goal is to critically review several aspects, identify the potential, and propose promising directions in database cracking. With this study, we hope to expand the scope of database cracking and possibly leverage cracking in database engines other than MonetDB.  We repeat several prior database cracking works including the core cracking algorithms as well as three other works on convergence (hybrid cracking), tuple-reconstruction (sideways cracking), and robustness (stochastic cracking) respectively. We evaluate these works and show possible directions to do even better. We further test cracking under a variety of experimental settings, including high selectivity queries, low selectivity queries, and multiple query access patterns. Finally, we compare cracking against different sorting algorithms as well as against different main-memory optimised indexes, including the recently proposed Adaptive Radix Tree (ART). Our results show that: (i) the previously proposed cracking algorithms are repeatable, (ii) there is still enough room to significantly improve the previously proposed cracking algorithms, (iii) cracking depends heavily on query selectivity, (iv) cracking needs to catch up with modern indexing trends, and (v) different indexing algorithms have different indexing signatures.</abstract>
+			<id>250</id>
+			<link>none</link>
+			<title>Benchmarking Scalability and Elasticity of Distributed Database Systems [Experiments and Analysis Paper]</title>
+			<authors>Jörn Kuhlenkamp (KIT), Markus Klems* (KIT), Oliver Röss (KIT)</authors>
+			<abstract>Distributed database system performance benchmarks are an important source of information for decision makers who must select the right technology for their data management problems. Since important decisions rely on trustworthy experimental data, it is necessary to reproduce experiments and verify the results. We reproduce performance and scalability benchmarking experiments of HBase and Cassandra that have been conducted by previous research and compare the results. The scope of our reproduced experiments is extended with a performance evaluation of Cassandra on different Amazon EC2 infrastructure configurations, and an evaluation of Cassandra and HBase elasticity by measuring scaling speed and performance impact while scaling.</abstract>
 		</paper>
 	</slot>
 	<slot>
 		<id>D2F1345T1515R3</id>
-		<name>Industrial 3</name>
+		<name>Industrial 3: Analytics</name>
 		<location>
 			<room>Diamond 3</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Industrial 3 Chair</chair>
+		<chair>0</chair>
+		<paper>
+			<id>705</id>
+			<link>none</link>
+			<title>Real-Time Twitter Recommendation: Online Motif Detection in Large Dynamic Graphs</title>
+			<authors>Pankaj Gupta (Twitter)),Venu Satuluri (Twitter)),Ajeet Grewal (Twitter)),Siva Gurumurthy (Twitter)),Volodymyr Zhabiuk (Twitter)),Quannan Li (Twitter)),Jimmy Lin* (Twitter)*)</authors>
+			<abstract>We describe a production Twitter system for generating relevant, personalized, and timely recommendations based on observing the temporally-correlated actions of each user's followings. The system currently serves millions of recommendations daily to tens of millions of mobile users. The approach can be viewed as a specific instance of the novel problem of online motif detection in large dynamic graphs. Our current solution partitions the graph across a number of machines, and with the construction of appropriate data structures, motif detection can be translated into the lookup and intersection of adjacency lists in each partition. We conclude by discussing a generalization of the problem that perhaps represents a new class of data management systems.</abstract>
+		</paper>
+		<paper>
+			<id>706</id>
+			<link>none</link>
+			<title>Error-bounded Sampling for Analytics on Big Sparse Data</title>
+			<authors>Ying Yan* (Microsoft Research)*),Liang Chen (Microsoft Research)),Zheng Zhang (MSRA))</authors>
+			<abstract>Aggregation queries are at the core of business intelligence and data analytics. In the big data era, many scalable shared-nothing systems have been developed to process aggregation queries over massive amount of data. Microsoft's SCOPE is a well-known instance in this category. Nevertheless, aggregation queries are still expensive, because query processing needs to consume the entire data set, which is often hundreds of terabytes. Data sampling is a technique that samples a small portion of data to process and returns an approximate result with an error bound, thereby reducing the query's execution time. While similar problems were studied in the database literature, we encountered new challenges that disable most of prior efforts: (1) error bounds are dictated by end users and cannot be compromised, (2) data is sparse, meaning data has a limited population but a wide range. For such cases, conventional uniform sampling often yield high sampling rates and thus deliver limited or no performance gains. In this paper, we propose error-bounded stratified sampling to reduce sample size. The technique relies on the insight that we may only reduce the sampling rate with the knowledge of data distributions. The technique has been implemented into Microsoft internal search query platform. Results show that the proposed approach can reduce up to 99% sample size comparing with uniform sampling, and its performance is robust against data volume and other key performance metrics.</abstract>
+		</paper>
+		<paper>
+			<id>707</id>
+			<link>none</link>
+			<title>Interval Disaggregate: A New Operator for Business Planning</title>
+			<authors>Sang Cha (SAP Labs Korea)),Kunsoo Park* (SAP Labs Korea)*),Chang Song (SAP Labs Korea)),Ki Kim (SAP Labs Korea)),Cheol Ryu (SAP Labs Korea)),Sunho Lee (SAP Labs Korea))</authors>
+			<abstract>Business planning as well as analytics on top of large-scale database systems is valuable to decision makers, but planning operations known and implemented so far are very basic. In this paper we propose a new planning operation called interval disaggregate, which goes as follows. Suppose that the planner, typically the management of a company, plans sales revenues of its products in the current year. An interval of the expected revenue for each product in the current year is computed from historical data in the database as the prediction interval of linear regression on the data. A total target revenue for the current year is given by the planner. The goal of the interval disaggregate operation is to find an appropriate disaggregation of the target revenue, considering the intervals. We formulate the problem of interval disaggregation more precisely and give solutions for the problem. Multidimensional geometry plays a crucial role in the problem formulation and the solutions. We implemented interval disaggregation into the planning engine of SAP HANA and did experiments on real-world data. Our experiments show that interval disaggregation gives more appropriate solutions with respect to historical data than the known basic disaggregation called referential disaggregation. We also show that interval disaggregation can be combined with the deseasonalization technique when the dataset shows seasonal fluctuations.</abstract>
+		</paper>
+		<paper>
+			<id>708</id>
+			<link>none</link>
+			<title>Chimera: Large-Scale Classification using Machine Learning, Rules, and Crowdsourcing</title>
+			<authors>AnHai Doan* (Univ. of Wisconsin Madison)*),Chong Sun (WalmartLabs)),Narasimhan  Rampalli (WalmartLabs))</authors>
+			<abstract>solution to classify tens of millions of products into 5000+ product types at WalmartLabs. We show that at this scale, many conventional assumptions regarding learning and crowdsourcing break down, and that existing solutions cease to work. We describe how Chimera employs a combination of learning, rules (created by in-house analysts), and crowdsourcing to achieve accurate, continuously improving, and cost-effective classification. We discuss a set of lessons learned for other similar Big Data systems. In particular, we argue that at large scales crowdsourcing is critical, but must be used in combination with learning, rules, and in-house analysts. We also argue that using rules (in conjunction with learning) is a must, and that more research attention should be paid to helping analysts create and manage (tens of thousands of) rules more effectively.</abstract>
+		</paper>
 	</slot>
 	<slot>
 		<id>D2F1345T1515R4</id>
 		<name>Papers 12: Parallel and Distributed Systems</name>
 		<location>
 			<room>Diamond 4</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 12 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>167</id>
 			<link>none</link>
@@ -1501,9 +1633,9 @@
 		<name>Papers 10.2: Web and Knowledge II</name>
 		<location>
 			<room>Diamond 5</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 10.2 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>156</id>
 			<link>http://www.vldb.org/pvldb/vol7/p837-aluc.pdf</link>
@@ -1545,23 +1677,15 @@
 		<name>Tutorial 3: Knowledge Bases in the Age of Big Data Analytics</name>
 		<location>
 			<room>Bauhinia 1</room>
-			<map>TBD.txt</map>
+			<map>bauhinia.jpg</map>
 		</location>
-		<chair>Tutorial 3 Chair</chair>
+		<chair>0</chair>
 		<paper>
-			<id>54</id>
-			<link>none</link>
+			<id>803</id>
+			<link>papers/p-suchanek.pdf</link>
 			<title>Knowledge Bases in the Age of Big Data Analytics</title>
-			<authors>Fabian M. Suchanek (Telecom ParisTech University),Gerhard Weikum (Max Planck Institute for Informatics)</authors>
+			<authors>Fabian Suchanek, Gerhard Weikum</authors>
 			<abstract>This tutorial gives an overview on state-of-the-art methods for the automatic construction of large knowledge bases and harnessing them for data and text analytics. It covers both big-data methods for building knowledge bases and knowledge bases being assets for big-data applications. The tutorial also points out challenges and research opportunities.</abstract>
-			<authorInfo>
-				<photo>fabiansuchanek.jpg</photo>
-				<bio>Fabian M. Suchanek is an associate professor at the Télécom ParisTech University in Paris, France. He obtained his PhD at the Max Planck Institute for Informatics in 2008, which earned him an honorable mention for the ACM SIGMOD Jim Gray Dissertation Award. Later he was a postdoc at Microsoft Research Search Labs in Silicon Valley (in the group of Rakesh Agrawal) and in the WebDam team at INRIA Saclay/France (in the group of Serge Abiteboul), and led an independent Otto Hahn Research Group, funded by the Max Planck Society. Fabian is the main architect of the YAGO ontology, one of the largest public knowledge bases.</bio>
-			</authorInfo>
-			<authorInfo>
-				<photo>gerhardweikum.jpg</photo>
-				<bio>Gerhard Weikum is a scientific director at the Max Planck Institute for Informatics in Saarbruecken, Germany, where he is leading the department on databases and information systems. He co-authored a comprehensive textbook on transactional systems, received the VLDB 10-Year Award for his work on automatic DB tuning, and is one of the creators of the YAGO knowledge base. Gerhard is an ACM Fellow, a member of several scientific academies in Germany and Europe, and a recipient of a Google Focused Research Award, an ACM SIGMOD Contributions Award, and an ERC Synergy Grant.</bio>
-			</authorInfo>
 		</paper>
 	</slot>
 	<slot>
@@ -1569,9 +1693,16 @@
 		<name>Demo 2</name>
 		<location>
 			<room>Pearl</room>
-			<map>TBD.txt</map>
+			<map>pearl.jpg</map>
 		</location>
-		<chair>Demo 2 Chair</chair>
+		<chair>0</chair>
+		<paper>
+			<id>997</id>
+			<link>none</link>
+			<title>Faster Visual Analytics through Pixel-Perfect Aggregation</title>
+			<authors>Uwe Jugel* (SAP),Zbigniew Jerzak (SAP),Gregor Hackenbroich (SAP),Volker  Markl (TU Berlin)</authors>
+			<abstract>State-of-the-art visual data analysis tools ignore bandwidth limitations. They fetch millions of records of high-volume time series data from an underlying RDBMS to eventually draw only a few thousand pixels on the screen. In this work, we demonstrate a pixel-aware big data visualization system that dynamically adapts the number of data points transmitted and thus the data rate, while preserving pixel-perfect visualizations. We show how to carefully select the data points to fetch for each pixel of a visualization, using a visualization-driven data aggregation that models the visualization process. Defining all required data reduction operators at the query level, our system trades off a few milliseconds of query execution time for dozens of seconds of data transfer time. The results are significantly reduced response times and a near real-time visualization of millions of data points. Using our pixel-aware system, the audience will be able to enjoy the speed and ease of big data visualizations and learn about the scientific background of our system through an interactive evaluation component, allowing the visitor to measure, visualize, and compare competing visualization-related data reduction techniques.</abstract>
+		</paper>
 		<paper>
 			<id>1036</id>
 			<link>none</link>
@@ -1652,16 +1783,42 @@
 	</slot>
 </period>
 <period>
-	<id>D3F830T945</id>
-	<name>Thursday Sep 4th 08:30-09:45</name>
+	<id>D2F1515T1815</id>
+	<name>Wednesday Sep 3rd 15:15-18:15</name>
 	<slot>
-		<id>D3F830T945R0</id>
-		<name>Plenary 3</name>
+		<id>D2F1515T1815R0</id>
+		<name>Plenary Poster Session in the East Gallery: Plenary Poster Session in the East Gallery</name>
 		<location>
 			<room>Crystal</room>
-			<map>TBD.txt</map>
+			<map>crystal.jpg</map>
 		</location>
-		<chair>Plenary 3 Chair</chair>
+		<chair>Plenary Poster Session in the East Gallery</chair>
+	</slot>
+</period>
+<period>
+	<id>D2F1830T2200</id>
+	<name>Wednesday Sep 3rd 18:30-22:00</name>
+	<slot>
+		<id>D2F1830T2200R0</id>
+		<name>Banquet: Banquet</name>
+		<location>
+			<room>Crystal</room>
+			<map>crystal.jpg</map>
+		</location>
+		<chair>Banquet</chair>
+	</slot>
+</period>
+<period>
+	<id>D3F830T1000</id>
+	<name>Thursday Sep 4th 08:30-10:00</name>
+	<slot>
+		<id>D3F830T1000R0</id>
+		<name>Award Ceremony</name>
+		<location>
+			<room>Crystal</room>
+			<map>crystal.jpg</map>
+		</location>
+		<chair>0</chair>
 	</slot>
 </period>
 <period>
@@ -1672,9 +1829,9 @@
 		<name>Papers 20.4: Graph Data IV</name>
 		<location>
 			<room>Diamond 1</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 20.4 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>225</id>
 			<link>http://www.vldb.org/pvldb/vol7/p577-salihoglu.pdf</link>
@@ -1684,10 +1841,9 @@
 		</paper>
 		<paper>
 			<id>226</id>
-			<link>http://homepages.inf.ed.ac.uk/wenfei/papers/vldb14-impossibility.pdf</link>
+			<link>none</link>
 			<title>Distributed Graph Simulation: Impossibility and Possiblity</title>
 			<authors>Wenfei Fan (University of Edinburgh), Xin Wang (University of Edinburgh), YINGHUI WU* (University of California Santa), Dong Deng (Tsinghua University)</authors>
-			<abstract>This paper studies fundamental problems for distributed graph simulation. Given a pattern query Q and a graph G that is fragmented and distributed, a graph simulation algorithm A is to compute the matches Q(G) of Q in G. We say that A is parallel scalable in (a) response time if its parallel computational cost is determined by the largest fragment Fm of G and the size |Q| of query Q, and (b) data shipment if its total amount of data shipped is determined by |Q| and the number of fragments of G, independent of the size of graph G. (1) We prove an impossibility theorem: there exists no distributed graph simulation algorithm that is parallel scalable in either response time or data shipment. (2) However, we show that distributed graph simulation is partition bounded, i.e., its response time depends only on |Q|, |Fm| and the number |Vf| of nodes in G with edges across different fragments; and its data shipment depends on |Q| and the number |Ef| of crossing edges only. We provide the first algorithms with these performance guarantees. (3) We also identify special cases of patterns and graphs when parallel scalability is possible. (4) We experimentally verify the scalability and efficiency of our algorithms.</abstract>
 		</paper>
 		<paper>
 			<id>227</id>
@@ -1720,65 +1876,100 @@
 	</slot>
 	<slot>
 		<id>D3F1015T1200R2</id>
-		<name>Papers 23: Benchmarking</name>
+		<name>Papers 4: Indexing</name>
 		<location>
 			<room>Diamond 2</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 23 Chair</chair>
+		<chair>0</chair>
 		<paper>
-			<id>246</id>
-			<link>none</link>
-			<title>QuEval: Beyond high-dimensional indexing à la carte</title>
-			<authors>Martin Schäler* (University of Magdeburg), Alexander Grebhahn (University of Passau), Reimar Schröter (University of Magdeburg), Sandro Schulze (TU Braunschweig), Veit Köppen (University of Magdeburg), Gunter Saake (University of Magdeburg)</authors>
-			<abstract>In the recent past, the amount of high-dimensional data, such as feature vectors extracted from multimedia data, increased dramatically. A large variety of indexes have been proposed to store and access such data efficiently. However, due to specific requirements of a certain use case, choosing an adequate index structure is a complex and time-consuming task. This may be due to engineering challenges or open research questions.To overcome this limitation, we present QuEval, an open-source framework that can be flexibly extended w.r.t. index structures, distance metrics, and data sets. QuEval provides a unified environment for a sound evaluation of different indexes, for instance, to support tuning of indexes. In an empirical evaluation, we show how to apply our framework, motivate benefits, and demonstrate analysis possibilities.</abstract>
+			<id>113</id>
+			<link>http://www.vldb.org/pvldb/vol6/p1714-kossmann.pdf</link>
+			<title>Adaptive Range Filters for Cold Data: Avoiding Trips to Siberia</title>
+			<authors>Karolina Alexiou (ETH), Donald Kossmann* (ETH), Paul Larson (Microsoft)</authors>
+			<abstract>Bloom filters are a great technique to test whether a key is notin a set of keys.  This paper presents a novel datastructure called ARF.  In a nutshell, ARFsare for range queries what Bloom filters are for point queries.  Thatis, an ARF can determine whether a set of keys does not containany keys that are part of a specific range.  This paper describes theprinciples and methods for efficient implementation ofARFs and presents the results of comprehensive experimentsthat assess the precision, space, and latency of ARFs.Furthermore, thispaper shows how ARFs can be applied to a commercial database systemthat partitions data into hot and cold regions to optimizequeries that involve only hot data.</abstract>
 		</paper>
 		<paper>
-			<id>247</id>
-			<link>http://www.vldb.org/pvldb/vol6/p1882-sowell.pdf</link>
-			<title>An Experimental Analysis of Iterated Spatial Joins in Main Memory</title>
-			<authors>Benjamin Sowell* (Amiato), Marcos Vaz Salles (DIKU), Tuan Cao (Google), Alan Demers (Cornell University), Johannes Gehrke (Cornell University)</authors>
-			<abstract>Many modern applications rely on high-performance processing of spatial data. Examples include location-based services, games, virtual worlds, and scientific simulations such as molecular dynamics and behavioral simulations. These applications deal with large numbers of moving objects that continuously sense their environment, and their data access can often be abstracted as a repeated spatial join. Updates to object positions are interspersed with these join operations, and batched for performance. Even for the most demanding scenarios, the data involved in these joins fits comfortably in the main memory of a cluster of machines, and most applications run completely in main memory for performance reasons.Choosing appropriate spatial join algorithms is challenging due to the large number of techniques in the literature. In this paper, we perform an extensive evaluation of repeated spatial join algorithms for distance (range) queries in main memory. Our study is unique in breadth when compared to previous work: We implement, tune, and compare ten distinct algorithms on several workloads drawn from the simulation and spatial indexing literature. We explore the design space of both index nested loops algorithms and specialized join algorithms, as well as the use of moving object indices that can be incrementally maintained. Surprisingly, we find that when queries and updates can be batched, repeatedly re-computing the join result from scratch outperforms using a moving object index in all but the most extreme cases. This suggests that --- given the code complexity of index structures for moving objects --- specialized join strategies over simple index structures, such as Synchronous Traversal over R-Trees, should be the methods of choice for the above applications.</abstract>
+			<id>114</id>
+			<link>http://www.vldb.org/pvldb/vol7/p529-wang.pdf</link>
+			<title>Lightweight Indexing of Observational Data in Log-Structured Storage</title>
+			<authors>Sheng Wang (National Univ. of Singapore), David Maier (Portland State University), Beng Chin Ooi* (National University of Singapore)</authors>
+			<abstract>Huge amounts of data are being generated by sensing devices every day, recording the status of objects and the environment. Such observational data is widely used in scientific research. As the capabilities of sensors keep improving, the data produced are drastically expanding in precision and quantity, making it a write-intensive domain. Log-structured storage is capable of providing high write throughput, and hence is a natural choice for managing large-scale observational data.  In this paper, we propose an approach to indexing and querying observational data in log-structured storage. Based on key traits of observational data, we design a novel index approach called the CR-index (Continuous Range Index), which provides fast query performance without compromising write throughput. It is a lightweight structure that is fast to construct and often small enough to reside in RAM. Our experimental results show that the CR-index is superior in handling observational data compared to other indexing techniques. While our focus is scientific data, we believe our index will be effective for other applications with similar properties, such as process monitoring in manufacturing.</abstract>
 		</paper>
 		<paper>
-			<id>248</id>
-			<link>http://www.vldb.org/pvldb/vol7/p277-difallah.pdf</link>
-			<title>OLTP-Bench: An Extensible Testbed for Benchmarking Relational Databases</title>
-			<authors>Djellel Eddine Difallah* (University of fribourg), Andrew Pavlo (Carnegie Mellon University), Carlo Curino (Microsoft), Philippe Cudré-Mauroux (University of Fribourg)</authors>
-			<abstract>Benchmarking is an essential aspect of any database management system (DBMS) effort. Despite several recent advancements, such as pre-configured cloud database images and database-as-a-service (DBaaS) offerings, the deployment of a comprehensive testing plat- form with a diverse set of datasets and workloads is still far from being trivial. In many cases, researchers and developers are limited to a small number of workloads to evaluate the performance charac- teristics of their work. This is due to the lack of a universal bench- marking infrastructure, and to the difficulty of gaining access to real data and workloads. This results in lots of unnecessary engineer- ing efforts and makes the performance evaluation results difficult to compare. To remedy these problems, we present OLTP-Bench, an extensible “batteries included” DBMS benchmarking testbed. The key contributions of OLTP-Bench are its ease of use and extensibil- ity, support for tight control of transaction mixtures, request rates, and access distributions over time, as well as the ability to support all major DBMSs and DBaaS platforms. Moreover, it is bundled with fifteen workloads that all differ in complexity and system de- mands, including four synthetic workloads, eight workloads from popular benchmarks, and three workloads that are derived from real-world applications. We demonstrate through a comprehen- sive set of experiments conducted on popular DBMS and DBaaS offerings the different features provided by OLTP-Bench and the effectiveness of our testbed in characterizing the performance of database services.</abstract>
+			<id>115</id>
+			<link>http://www.vldb.org/pvldb/vol6/p1522-rao.pdf</link>
+			<title>Bitlist: New Full-text Index for Low Space Cost and Efficient Keyword Search</title>
+			<authors>Weixiong Rao* (University of Helsinki), Lei Chen (Honk Kong University of Science and Technology), Pan Hui (HKUST (Telekom Innovation Laboratories (German,Berlin (Germany), Sasu Tarkoma (University of Helsinki (Finland)</authors>
+			<abstract>Nowadays Web search engines are experiencing significant performance challenges caused by a huge amount of Web pages and increasingly larger number of Web users. The key issue for addressing these challenges is to design a compact structure which can index Web documents with low space and meanwhile process keyword search very fast. Unfortunately, the current solutions typically separate the space optimization from the search improvement. As a result, such solutions either save space yet with search inefficiency, or allow fast keyword search but with huge space requirement. In this paper, to address the challenges, we propose a novel structure bitlist with both low space requirement and supporting fast keyword search. Specifically, based on a simple yet very efficient encoding scheme, bitlist uses a single number to encode a set of integer document IDs for low space, and adopts fast bitwise operations for very efficient boolean-based keyword search. Based on real data sets, our extensive experimental results verify that bitlist outperforms the recent proposed solution, inverted list compression [23, 22] by spending 36.71% less space and 61.91% faster processing time, and achieves comparable running time as [8] but with significantly lower space.</abstract>
 		</paper>
 		<paper>
-			<id>249</id>
-			<link>none</link>
-			<title>SQL-on-Hadoop: Full Circle Back to Shared-Nothing Database Architectures</title>
-			<authors>Avrilia Floratou* (IBM Almaden Research Center), Umar Farooq Minhas (IBM Almaden Research Center (US), Fatma Ozcan (IBM Almaden)</authors>
-			<abstract>SQL query processing for analytics over Hadoop data has recently gained significant traction. Among many systems providing some SQL support over Hadoop, Hive is the first native Hadoop system that uses an underlying framework such as MapReduce or Tez to process SQL-like statements. Impala, on the other hand, represents the new emerging class of SQL-on-Hadoop systems that exploit a shared-nothing parallel database architecture over Hadoop. Both systems optimize their data ingestion via columnar storage, and promote different file formats: ORC and Parquet. In this paper, we compare the performance of these two systems by conducting a set of cluster experiments using a TPC-H like benchmark and two TPC-DS inspired workloads. We also closely study the I/O efficiency of their columnar formats using a set of micro-benchmarks. Our results show that Impala is 3.3X to 4.4X faster than Hive on MapReduce and 2.1X to 2.8X than Hive on Tez for the overall TPC-H experiments. Impala is also 8.2X to 10X faster than Hive on MapReduce and about 4.3X faster than Hive on Tez for the TPC-DS inspired experiments. Through detailed analysis of experimental results, we identify the reasons for this performance gap and examine the strengths and limitations of each system.</abstract>
+			<id>116</id>
+			<link>http://www.vldb.org/pvldb/vol6/p1930-sundaram.pdf</link>
+			<title>Streaming Similarity Search over one Billion Tweets using Parallel Locality-Sensitive Hashing</title>
+			<authors>Narayanan Sundaram* (Intel Corporation), Aizana Turmukhametova (MIT), Nadathur Satish (Intel Corporation), Todd Mostak (Harvard), Piotr Indyk (MIT), Sam Madden, Pradeep Dubey (Intel Corporation)</authors>
+			<abstract>Finding nearest neighbors has become an important operation on databases, with applications to text search, multimedia indexing, and many other areas. One popular algorithm for similarity search, especially for high dimensional data (where spatial indexes like kd-trees do not perform well) is Locality Sensitive Hashing (LSH), an approximation algorithm for finding similar objects.In this paper, we describe a new variant of LSH, called Parallel LSH (PLSH) designed to be extremely efficient, capable of scaling out on multiple nodes and multiple cores, and which supports high-throughput streaming of new data. Our approach employs several novel ideas, including: cache-conscious hash table layout, using a 2-level merge algorithm for hash table construction; an efficient algorithm for duplicate elimination during hash-table querying; an insert-optimized hash table structure and efficient data expiration algorithm for streaming data; and a performance model that accurately estimates performance of the algorithm and can be used to optimize parameter settings. We show that on a workload where we perform similarity search on a dataset of  1 Billion tweets, with hundreds of millions of new tweets per day, we can achieve query times of 1–2.5 ms. We show that this is an order of magnitude faster than existing indexing schemes, such as inverted indexes. To the best of our knowledge, this is the fastest implementation of LSH, with table construction times up to 3.7X faster and query times that are 8.3X faster than a basic implementation.</abstract>
 		</paper>
 		<paper>
-			<id>250</id>
-			<link>none</link>
-			<title>Benchmarking Scalability and Elasticity of Distributed Database Systems [Experiments and Analysis Paper]</title>
-			<authors>Jörn Kuhlenkamp (KIT), Markus Klems* (KIT), Oliver Röss (KIT)</authors>
-			<abstract>Distributed database system performance benchmarks are an important source of information for decision makers who must select the right technology for their data management problems. Since important decisions rely on trustworthy experimental data, it is necessary to reproduce experiments and verify the results. We reproduce performance and scalability benchmarking experiments of HBase and Cassandra that have been conducted by previous research and compare the results. The scope of our reproduced experiments is extended with a performance evaluation of Cassandra on different Amazon EC2 infrastructure configurations, and an evaluation of Cassandra and HBase elasticity by measuring scaling speed and performance impact while scaling.</abstract>
+			<id>117</id>
+			<link>http://www.vldb.org/pvldb/vol7/p97-schuhknecht.pdf</link>
+			<title>The Uncracked Pieces in Database Cracking</title>
+			<authors>Felix Martin Schuhknecht* (Saarland University), Alekh Jindal (MIT), Jens  Dittrich (Saarland University)</authors>
+			<abstract>Database cracking has been an area of active research in recent years. The core idea of database cracking is to create indexes adaptively and incrementally as a side-product of query processing. Several works have proposed different cracking techniques for different aspects including updates, tuple-reconstruction, convergence, concurrency-control, and robustness. However, there is a lack of any comparative study of these different methods by an independent group. In this paper, we conduct an experimental study on database cracking. Our goal is to critically review several aspects, identify the potential, and propose promising directions in database cracking. With this study, we hope to expand the scope of database cracking and possibly leverage cracking in database engines other than MonetDB.  We repeat several prior database cracking works including the core cracking algorithms as well as three other works on convergence (hybrid cracking), tuple-reconstruction (sideways cracking), and robustness (stochastic cracking) respectively. We evaluate these works and show possible directions to do even better. We further test cracking under a variety of experimental settings, including high selectivity queries, low selectivity queries, and multiple query access patterns. Finally, we compare cracking against different sorting algorithms as well as against different main-memory optimised indexes, including the recently proposed Adaptive Radix Tree (ART). Our results show that: (i) the previously proposed cracking algorithms are repeatable, (ii) there is still enough room to significantly improve the previously proposed cracking algorithms, (iii) cracking depends heavily on query selectivity, (iv) cracking needs to catch up with modern indexing trends, and (v) different indexing algorithms have different indexing signatures.</abstract>
+		</paper>
+		<paper>
+			<id>127</id>
+			<link>http://www.vldb.org/pvldb/vol6/p1834-achakeev.pdf</link>
+			<title>Efficient Bulk Updates on Multiversion B-trees</title>
+			<authors>Daniar Achakeev* (Philipps-Universität Marburg), Bernhard Seeger (University of Marburg)</authors>
+			<abstract>Partial persistent index structures support efficient access to current and past versions of objects, while updates are allowed on the current version. The Multiversion B-Tree (MVBT) represents a partially persistent index-structure with both, asymptotic worst-case performance and excellent performance in real life applications. Updates are performed tuple-by-tuple with the same asymptotic performance as for standard B$^+$trees. To the best of our knowledge, there is no efficient algorithm for bulk loading and bulk update of MVBT and other partially persistent index structures. In this paper, we propose the first loading algorithm for MVBT that meets the lower-bound of external sorting. In addition, our approach is also applicable to bulk updates. This is achieved by combining two basic technologies, weight balancing and buffer tree. Our extensive set of experiments confirm the theoretical findings: Our loading algorithm runs considerably faster than performing updates tuple-by-tuple.</abstract>
 		</paper>
 	</slot>
 	<slot>
 		<id>D3F1015T1200R3</id>
-		<name>Industrial 4</name>
+		<name>Industrial 4: Big Data 2</name>
 		<location>
 			<room>Diamond 3</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Industrial 4 Chair</chair>
+		<chair>0</chair>
+		<paper>
+			<id>717</id>
+			<link>none</link>
+			<title>Changing Engines in Midstream: A Java Stream Computational Model for Big Data Processing</title>
+			<authors>Xueyuan Su* (Oracle Corporation)*),Garret Swart (Oracle Corporation)),Brian Goetz (Oracle Corporation)),Brian Oliver (Oracle Corporation)),Paul Sandoz (Oracle Corporation))</authors>
+			<abstract>With the addition of lambda expressions and the Stream API in Java 8, Java has gained a powerful and expressive query language that operates over in-memory collections of Java objects, making the transformation and analysis of data more convenient, scalable and efficient. In this paper, we build on Java 8 Stream and add a DistributableStream abstraction that supports federated query execution over an extensible set of distributed compute engines. Each query eventually results in the creation of a materialized result that is returned either as a local object or as an engine defined distributed Java Collection that can be saved and/or used as a source for future queries. Distinctively, DistributableStream supports the changing of compute engines both between and within a query, allowing different parts of a computation to be executed on different platforms. At execution time, the query is organized as a sequence of pipelined stages, each stage potentially running on a different engine. Each node that is part of a stage executes its portion of the computation on the data available locally or produced by the previous stage of the computation. This approach allows for computations to be assigned to engines based on pricing, data locality, and resource availability. Coupled with the inherent laziness of stream operations, this brings great flexibility to query planning and separates the semantics of the query from the details of the engine used to execute it. We currently support three engines, Local, Apache Hadoop MapReduce and Oracle Coherence, and we illustrate how new engines and data sources can be added.</abstract>
+		</paper>
+		<paper>
+			<id>718</id>
+			<link>none</link>
+			<title>Fast Foreign-Key Detection in Microsoft SQL Server PowerPivot for Excel</title>
+			<authors>Zhimin Chen (Microsoft Research)),Vivek Narasayya* (Microsoft Research)*),Surajit Chaudhuri (Microsoft Research))</authors>
+			<abstract>Microsoft SQL Server PowerPivot for Excel, or PowerPivot for short, is an in-memory business intelligence (BI) engine that enables Excel users to interactively create pivot tables over large data sets imported from sources such as relational databases, text files and web data feeds. Unlike traditional pivot tables in Excel that are defined on a single table, PowerPivot allows analysis over multiple tables connected via foreign-key joins. In many cases however, these foreign-key relationships are not known a priori, and information workers are often not be sophisticated enough to define these relationships. Therefore, the ability to automatically discover foreign-key relationships in PowerPivot is valuable, if not essential. The key challenge is to perform this detection interactively and with high precision even when data sets scale to hundreds of millions of rows and the schema contains tens of tables and hundreds of columns. In this paper, we describe techniques for fast foreign-key detection in PowerPivot and experimentally evaluate its accuracy, performance and scale on both synthetic benchmarks and real-world data sets. These techniques have been incorporated into PowerPivot for Excel.</abstract>
+		</paper>
+		<paper>
+			<id>719</id>
+			<link>none</link>
+			<title>Big Data Small Footprint: The Design of A Low-Power Classifier for Detecting Transportation Modes</title>
+			<authors>Meng-Chieh Yu* (HTC (Studio Engineering)*),Tong Yu (National Taiwan University)),ShaoChen Wang (HTC)),Chih-Jen Lin (National Taiwan University)),Edward Y. Chang (HTC))</authors>
+			<abstract>Sensors on mobile phones and wearables, and in general sensors on IoT (Internet of Things), bring forth a couple of new challenges to big data research. First, the power consumption for analyzing sensor data must be low, since most wearables and portable devices are power-strapped. Second, the velocity of analyzing big data on these devices must be high, otherwise the limited local storage may overflow. This paper presents our hardware-software co-design of a classifier for wearables to detect a person's transportation mode (i.e., still, walking, running, biking, and on a vehicle). We particularly focus on addressing the big-data small-footprint requirement by designing a classifier that is low in both computational complexity and memory requirement. Together with a sensor-hub configuration, we are able to drastically reduce power consumption by 99%, while maintaining competitive mode-detection accuracy. The data used in the paper is made publicly available for conducting research.</abstract>
+		</paper>
+		<paper>
+			<id>720</id>
+			<link>none</link>
+			<title>Indexing HDFS Data in PDW: Splitting the data from the index</title>
+			<authors>Vinitha  Gankidi (University of Wisconsin (Madison)),Nikhil Teletia* (Microsoft)*),Jignesh Patel (University of Wisconsin)),Alan Halverson (Microsoft Jim Gray Systems Lab)),David Dewitt (Microsoft Jim Gray Research Lab))</authors>
+			<abstract>There is a growing interest in making relational DBMSs work synergistically with MapReduce systems. However, there are interesting technical challenges associated with figuring out the right balance between the use and co-deployment of these systems. This paper focuses on one specific aspect of this balance, namely how to leverage the superior indexing and query processing power of a relational DBMS for data that is often more cost-effectively stored in Hadoop/HDFS. We present a method to use conventional B+-tree indices in an RDBMS for data stored in HDFS and demonstrate that our approach is especially effective for highly selective queries.</abstract>
+		</paper>
 	</slot>
 	<slot>
 		<id>D3F1015T1200R4</id>
-		<name>Papers 1: OLAP</name>
+		<name>Papers 1: Data Mining</name>
 		<location>
 			<room>Diamond 4</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 1 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>96</id>
 			<link>http://www.vldb.org/pvldb/vol6/p1870-aduri.pdf</link>
@@ -1820,9 +2011,9 @@
 		<name>Papers 9: Data Integration</name>
 		<location>
 			<room>Diamond 5</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 9 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>146</id>
 			<link>http://www.vldb.org/pvldb/vol6/p1582-thirumuruganathan.pdf</link>
@@ -1864,9 +2055,9 @@
 		<name>Tutorial 4: Enterprise search in the big data era</name>
 		<location>
 			<room>Bauhinia 1</room>
-			<map>TBD.txt</map>
+			<map>bauhinia.jpg</map>
 		</location>
-		<chair>Tutorial 4 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>55</id>
 			<link>none</link>
@@ -1886,15 +2077,22 @@
 				<bio>Huaiyu Zhu is with IBM Research—Almaden. He received his PhD degree in Computational Mathematics and Statistics from Liverpool University. His research interest includes statistical and machine learning techniques in data mining applications, especially in text analytics and large scale enterprise applications. In the past several years his main research focus was on enterprise search.</bio>
 			</authorInfo>
 		</paper>
+		<paper>
+			<id>804</id>
+			<link>papers/p-meliou.pdf</link>
+			<title>Causality and Explanations in Databases</title>
+			<authors>Alexandra Meliou, Sudeepa Roy, Dan Suciu</authors>
+			<abstract>With the surge in the availability of information, there is a great demand for tools that assist users in understanding their data. While today's exploration tools rely mostly on data visualization, users often want to go deeper and understand the underlying causes of a particular observation. This tutorial surveys research on causality and explanation for data-oriented applications. We will review and summarize the research thus far into causality and explanation in the database and AI communities, giving researchers a snapshot of the current state of the art on this topic, and propose a unified framework as well as directions for future research. We will cover both the theory of causality/explanation and some applications; we also discuss the connections with other topics in database research like provenance, deletion propagation, why-not queries, and OLAP techniques.</abstract>
+		</paper>
 	</slot>
 	<slot>
 		<id>D3F1015T1200R7</id>
 		<name>Demo 3</name>
 		<location>
 			<room>Pearl</room>
-			<map>TBD.txt</map>
+			<map>pearl.jpg</map>
 		</location>
-		<chair>Demo 3 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>1080</id>
 			<link>none</link>
@@ -1982,9 +2180,9 @@
 		<name>Papers 7.1: Architecture Systems</name>
 		<location>
 			<room>Diamond 1</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 7.1 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>133</id>
 			<link>http://web.cse.ohio-state.edu/hpcs/WWW/HTML/publications/papers/TR-14-3.pdf</link>
@@ -2019,9 +2217,9 @@
 		<name>Papers 8: Dissemination</name>
 		<location>
 			<room>Diamond 2</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 8 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>142</id>
 			<link>http://www.vldb.org/pvldb/vol7/p613-zhang.pdf</link>
@@ -2053,21 +2251,40 @@
 	</slot>
 	<slot>
 		<id>D3F1330T1445R3</id>
-		<name>Local Industrial 2</name>
+		<name>Local Industrial 2: Analytics</name>
 		<location>
 			<room>Diamond 3</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Local Industrial 2 Chair</chair>
+		<chair>0</chair>
+		<paper>
+			<id>605</id>
+			<link>none</link>
+			<title>GEMINI: An Integrative Healthcare Analytics System</title>
+			<authors>Zheng Jye Ling (National University Health System)),Quoc Trung Tran (National University of Singapore)),Ju Fan (National University of Singapore)),Gerald C.H. Koh (National University Health System)),Thi Nguyen (National University of Singapore)),Chuen Seng Tan (National University Health System)),James W. L. Yip (National University Health System)),Meihui Zhang (National University of Singapore))</authors>
+		</paper>
+		<paper>
+			<id>606</id>
+			<link>none</link>
+			<title>A Personalized Recommendation System for Dating Site</title>
+			<authors>Chaoyue Dai (NetEase Inc.) , Feng Qian (NetEase Inc.), Wei Jiang (NetEase Inc.), Zhoutian Wang (NetEase Inc.), Zenghong Wu (NetEase Inc.)</authors>
+		</paper>
+		<paper>
+			<id>607</id>
+			<link>none</link>
+			<title>Design and Implementation of a Real-Time Interactive Analytics System for Large Spatio-Temporal Data</title>
+			<authors>Shiming Zhang (Huawei Noah's Ark Lab)),Yin Yang (University of Illinois at Urbana-Champaign)),Wei Fan (Huawei Noah's Ark Lab)),Marianne Winslett (University of Illinois at Urbana-Champaign))
+)</authors>
+		</paper>
 	</slot>
 	<slot>
 		<id>D3F1330T1445R4</id>
 		<name>Papers 17: Multi-dimensional Access</name>
 		<location>
 			<room>Diamond 4</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 17 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>194</id>
 			<link>http://www.vldb.org/pvldb/vol7/p745-liu.pdf</link>
@@ -2102,9 +2319,9 @@
 		<name>Papers 21.1: Database Usability I</name>
 		<location>
 			<room>Diamond 5</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 21.1 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>231</id>
 			<link>http://www.vldb.org/pvldb/vol7/p797-jugel.pdf</link>
@@ -2139,9 +2356,9 @@
 		<name>Tutorial 4: Enterprise search in the big data era</name>
 		<location>
 			<room>Bauhinia 1</room>
-			<map>TBD.txt</map>
+			<map>bauhinia.jpg</map>
 		</location>
-		<chair>Tutorial 4 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>55</id>
 			<link>none</link>
@@ -2161,15 +2378,22 @@
 				<bio>Huaiyu Zhu is with IBM Research—Almaden. He received his PhD degree in Computational Mathematics and Statistics from Liverpool University. His research interest includes statistical and machine learning techniques in data mining applications, especially in text analytics and large scale enterprise applications. In the past several years his main research focus was on enterprise search.</bio>
 			</authorInfo>
 		</paper>
+		<paper>
+			<id>804</id>
+			<link>papers/p-meliou.pdf</link>
+			<title>Causality and Explanations in Databases</title>
+			<authors>Alexandra Meliou, Sudeepa Roy, Dan Suciu</authors>
+			<abstract>With the surge in the availability of information, there is a great demand for tools that assist users in understanding their data. While today's exploration tools rely mostly on data visualization, users often want to go deeper and understand the underlying causes of a particular observation. This tutorial surveys research on causality and explanation for data-oriented applications. We will review and summarize the research thus far into causality and explanation in the database and AI communities, giving researchers a snapshot of the current state of the art on this topic, and propose a unified framework as well as directions for future research. We will cover both the theory of causality/explanation and some applications; we also discuss the connections with other topics in database research like provenance, deletion propagation, why-not queries, and OLAP techniques.</abstract>
+		</paper>
 	</slot>
 	<slot>
 		<id>D3F1330T1445R7</id>
 		<name>Demo 1</name>
 		<location>
 			<room>Pearl</room>
-			<map>TBD.txt</map>
+			<map>pearl.jpg</map>
 		</location>
-		<chair>Demo 1 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>993</id>
 			<link>none</link>
@@ -2190,13 +2414,6 @@
 			<title>STMaker--A System to Make Sense of Trajectory Data</title>
 			<authors>Han Su* (University of Queensland),Kai Zheng (University of Queensland),KAI ZENG (UCLA),Jiamin Huang (Nanjing University),xiaofang Zhou (University of Queensland)</authors>
 			<abstract>Widely adoption of GPS-enabled devices generates large amounts of trajectories every day. The raw trajectory data describes the movement history of moving objects by a sequence of  longitude, latitude, time-stamp  triples, which are nonintuitive for human to perceive the prominent features of the trajectory, such as where and how the moving object travels. In this demo, we present the STMaker system to help users make sense of individual trajectories. Given a trajectory, STMaker can automatically extract the significant semantic behavior of the trajectory, and summarize the behavior by a short human-readable text. In this paper, we first introduce the phrases of generating trajectory summarizations, and then show several real trajectory summarization cases.</abstract>
-		</paper>
-		<paper>
-			<id>997</id>
-			<link>none</link>
-			<title>Faster Visual Analytics through Pixel-Perfect Aggregation</title>
-			<authors>Uwe Jugel* (SAP),Zbigniew Jerzak (SAP),Gregor Hackenbroich (SAP),Volker  Markl (TU Berlin)</authors>
-			<abstract>State-of-the-art visual data analysis tools ignore bandwidth limitations. They fetch millions of records of high-volume time series data from an underlying RDBMS to eventually draw only a few thousand pixels on the screen. In this work, we demonstrate a pixel-aware big data visualization system that dynamically adapts the number of data points transmitted and thus the data rate, while preserving pixel-perfect visualizations. We show how to carefully select the data points to fetch for each pixel of a visualization, using a visualization-driven data aggregation that models the visualization process. Defining all required data reduction operators at the query level, our system trades off a few milliseconds of query execution time for dozens of seconds of data transfer time. The results are significantly reduced response times and a near real-time visualization of millions of data points. Using our pixel-aware system, the audience will be able to enjoy the speed and ease of big data visualizations and learn about the scientific background of our system through an interactive evaluation component, allowing the visitor to measure, visualize, and compare competing visualization-related data reduction techniques.</abstract>
 		</paper>
 		<paper>
 			<id>1002</id>
@@ -2250,9 +2467,9 @@
 		<name>Papers 20.3: Graph Data III</name>
 		<location>
 			<room>Diamond 1</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 20.3 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>220</id>
 			<link>http://www.vldb.org/pvldb/vol6/p1690-zhao.pdf</link>
@@ -2278,7 +2495,7 @@
 			<id>223</id>
 			<link>http://www.vldb.org/pvldb/vol7/p169-zhao.pdf</link>
 			<title>A Partition-Based Approach to Structure Similarity Search</title>
-			<authors>Xiang Zhao* (UNSW), Chuan Xiao (Nagoya University), Xuemin Lin (University of New South Wales), Qing Liu (CSIRO), Wenjie Zhang (University of New South Wales)</authors>
+			<authors>Xiang Zhao* (UNSW), Chuan Xiao (Nagoya University), Xuemin Lin (University of New South Wales), Qing Liu (CSIRO), Wenjie Zhang$$$$$$$)</authors>
 			<abstract>Graphs are widely used to model complex data in many applications, such as bioinformatics, chemistry, social networks, pattern recognition, etc. A fundamental and critical query primitive is to efficiently search similar structures in a large collection of graphs. This paper studies the graph similarity queries with edit distance constraints. Existing solutions to the problem utilize fixed-size overlapping substructures to generate candidates, and thus become susceptible to large vertex degrees or large distance thresholds. In this paper, we present a partition-based approach to tackle the problem. By dividing data graphs into variable-size non-overlapping partitions, the edit distance constraint is converted to a graph containment constraint for candidate generation. We develop efficient query processing algorithms based on the new paradigm. A candidate pruning technique and an improved graph edit distance algorithm are also developed to further boost the performance. In addition, a cost-aware graph partitioning technique is devised to optimize the index. Extensive experiments demonstrate our approach significantly outperforms existing approaches.</abstract>
 		</paper>
 		<paper>
@@ -2294,9 +2511,9 @@
 		<name>Papers 5.2: Query Processing II</name>
 		<location>
 			<room>Diamond 2</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 5.2 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>123</id>
 			<link>http://www.vldb.org/pvldb/vol7/p389-chester.pdf</link>
@@ -2325,31 +2542,52 @@
 			<authors>Sergio Greco (University of Calabria), Fabian Pijcke (University of Mons (UMONS)), Jef Wijsen* (University of Mons)</authors>
 			<abstract>A database is called uncertain if two or more tuples of the same relation are allowed to agree on their primary key. Intuitively, such tuples act as alternatives for each other. A repair (or possible world) of such uncertain database is obtained by selecting a maximal number of tuples without ever selecting two tuples of the same relation that agree on their primary key. For a Boolean query q, the problem CERTAINTY(q) takes as input an uncertain database db and asks whether q evaluates to true on every repair of db. In recent years, the complexity of CERTAINTY(q) has been studied under different restrictions on q. These complexity studies have assumed no restrictions on the uncertain databases that are input to CERTAINTY(q). In practice, however, it may be known that these input databases are partially consistent, in the sense that they satisfy some dependencies (e.g., functional dependencies). In this article, we introduce the problem CERTAINTY(q) in the presence of a set Σ of dependencies. The problem CERTAINTY(q,Σ) takes as input an uncertain database db that satisfies Σ, and asks whether every repair of db satisfies q.   We focus on the complexity of CERTAINTY(q,Σ) when q is an acyclic conjunctive query without self-join, and Σ is a set of functional dependencies and join dependencies, the latter of a particular form. We provide an algorithm that, given q and Σ, decides whether CERTAINTY(q,Σ) is first-order expressible. Moreover, we show how to effectively construct a first-order definition of CERTAINTY(q,Σ) if it exists.</abstract>
 		</paper>
-		<paper>
-			<id>127</id>
-			<link>http://www.vldb.org/pvldb/vol6/p1834-achakeev.pdf</link>
-			<title>Efficient Bulk Updates on Multiversion B-trees</title>
-			<authors>Daniar Achakeev* (Philipps-Universität Marburg), Bernhard Seeger (University of Marburg)</authors>
-			<abstract>Partial persistent index structures support efficient access to current and past versions of objects, while updates are allowed on the current version. The Multiversion B-Tree (MVBT) represents a partially persistent index-structure with both, asymptotic worst-case performance and excellent performance in real life applications. Updates are performed tuple-by-tuple with the same asymptotic performance as for standard B$^+$trees. To the best of our knowledge, there is no efficient algorithm for bulk loading and bulk update of MVBT and other partially persistent index structures. In this paper, we propose the first loading algorithm for MVBT that meets the lower-bound of external sorting. In addition, our approach is also applicable to bulk updates. This is achieved by combining two basic technologies, weight balancing and buffer tree. Our extensive set of experiments confirm the theoretical findings: Our loading algorithm runs considerably faster than performing updates tuple-by-tuple.</abstract>
-		</paper>
 	</slot>
 	<slot>
 		<id>D3F1515T1645R3</id>
-		<name>Industrial 5</name>
+		<name>Industrial 5: Big Data 1</name>
 		<location>
 			<room>Diamond 3</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Industrial 5 Chair</chair>
+		<chair>0</chair>
+		<paper>
+			<id>713</id>
+			<link>none</link>
+			<title>MRTuner: A Toolkit to Enable Holistic Optimization for MapReduce Jobs</title>
+			<authors>Juwei Shi* (IBM Research China)*),Jia  Zou (IBM Research-China)),Jiaheng Lu (RUC)),Zhao Cao (IBM Research China)),Shi Qiang Li (IBM Research China)),Chen Wang (IBM China Research Lab))</authors>
+			<abstract>MapReduce based data-intensive computing solutions are increasingly deployed as production systems. Unlike Internet companies who invent and adopt the technology from the very beginning, traditional enterprises demand easy-to-use software due to the limited capabilities of administrators. Automatic job optimization software for MapReduce is a promising technique to satisfy such requirements. In this paper, we introduce a toolkit from IBM, called MRTuner, to enable holistic optimization for MapReduce jobs. In particular, we propose a novel Producer-Transporter-Consumer (PTC) model, which characterizes the tradeoffs in the parallel execution among tasks. We also carefully investigate the complicated relations among about twenty parameters, which have significant impact on the job performance. We design an efficient search algorithm to find the optimal execution plan. Finally, we conduct a thorough experimental evaluation on two different types of clusters using the HiBench suite which covers various Hadoop workloads from GB to TB size levels. The results show that the search latency of MRTuner is a few orders of magnitude faster than that of the state-of-the-art cost-based optimizer, and the effectiveness of the optimized execution plan is also significantly improved.</abstract>
+		</paper>
+		<paper>
+			<id>714</id>
+			<link>none</link>
+			<title>Large-Scale Graph Analytics in Aster 6:  Bringing Context to Big Data Discovery </title>
+			<authors>David Simmen* (Teradata Aster）</authors>
+			<abstract>Graph analytics is an important big data discovery technique. Applications include identifying influential employees for retention, detecting fraud in a complex interaction network, and determining product affinities by exploiting community buying patterns. Specialized platforms have emerged to satisfy the unique processing requirements of large-scale graph analytics; however, these platforms do not enable graph analytics to be combined with other analytics techniques, nor do they work well with the vast ecosystem of SQL-based business applications. Teradata Aster 6.0 adds support for large-scale graph analytics to its repertoire of analytics capabilities. The solution extends the multi-engine processing architecture with support for bulk synchronous parallel execution, and a specialized graph engine that enables iterative analysis of graph structures. Graph analytics functions written to the vertex-oriented API exposed by the graph engine can be invoked from the context of an SQL query and composed with existing SQL-MR functions, thereby enabling data scientists and business applications to express computations that combine large-scale graph analytics with techniques better suited to a different style of processing. The solution includes a suite of pre-built graph analytic functions adapted for parallel execution.</abstract>
+		</paper>
+		<paper>
+			<id>715</id>
+			<link>none</link>
+			<title>Summingbird: A Framework for Integrating Batch and Online MapReduce Computations</title>
+			<authors>Oscar Boykin (Twitter)),Sam Ritchie (Twitter)),Ian O'Connell (Twitter)),Jimmy Lin* (Twitter)*)</authors>
+			<abstract>Summingbird is an open-source domain-specific language implemented in Scala and designed to integrate online and batch MapReduce computations in a single framework. Summingbird programs are written using dataflow abstractions such as sources, sinks, and stores, and can run on different execution platforms: Hadoop for batch processing (via Scalding/Cascading) and Storm for online processing. Different execution modes require different bindings for the dataflow abstractions (e.g., HDFS files or message queues for the source) but do not require any changes to the program logic. Furthermore, Summingbird can operate in a hybrid processing mode that transparently integrates batch and online results to efficiently generate up-to-date aggregations over long time spans. The language was designed to improve developer productivity and address pain points in building analytics solutions at Twitter where often, the same code needs to be written twice (once for batch processing and again for online processing) and indefinitely maintained in parallel. Our key insight is that certain algebraic structures provide the theoretical foundation for integrating batch and online processing in a seamless fashion. This means that Summingbird imposes constraints on the types of aggregations that can be performed, although in practice we have not found these constraints to be overly restrictive for a broad range of analytics tasks at Twitter.</abstract>
+		</paper>
+		<paper>
+			<id>716</id>
+			<link>none</link>
+			<title>DGFIndex for Smart Grid: Enhancing Hive with a Cost-Effective Multidimensional Range Index</title>
+			<authors>Liu Yue* (Chinese Academy of Sciences)*),Songlin Hu (Chinese Academy of Science)),Tilmann Rabl (University of Toronto)),Wantao Liu (Chinese Academy of Science)),Hans-Arno Jacobsen (University of Toronto)),Kaifeng Wu (State Grid Electricity Science Research Institute)),Jian Chen (Zhejiang Electric Power Corporation))</authors>
+			<abstract>In Smart Grid applications, as the number of deployed electric smart meters increases, massive amounts of valuable meter data is generated and collected every day. To enable reliable data collection and make business decisions fast, high throughput storage and high-performance analysis of massive meter data become crucial for grid companies. Considering the advantage of high efficiency, fault tolerance, and price-performance of Hadoop and Hive systems, they are frequently deployed as underlying platform for big data processing. However, in real business use cases, these data analysis applications typically involve multidimensional range queries (MDRQ) as well as batch reading and statistics on the meter data. While Hive is high-performance at complex data batch reading and analysis, it lacks efficient indexing techniques for MDRQ. In this paper, we propose DGFIndex, an index structure for Hive that efficiently supports MDRQ for massive meter data. DGFIndex divides the data space into cubes using the grid file technique. Unlike the existing indexes in Hive, which stores all combinations of multiple dimensions, DGFIndex only stores the information of cubes. This leads to smaller index size and faster query processing. Furthermore, with pre-computing user-defined aggregations of each cube, DGFIndex only needs to access the boundary region for aggregation query. Our comprehensive experiments show that DGFIndex can save significant disk space in comparison with the existing indexes in Hive and the query performance with DGFIndex is 2-50 times faster than existing indexes in Hive and HadoopDB for aggregation query, 2-5 times faster than both for non-aggregation query, 2-75 times faster than scanning the whole table in different query selectivity.</abstract>
+		</paper>
 	</slot>
 	<slot>
 		<id>D3F1515T1645R4</id>
 		<name>Papers 25: Transaction Processing</name>
 		<location>
 			<room>Diamond 4</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 25 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>256</id>
 			<link>http://www.vldb.org/pvldb/vol7/p947-chairunnanda.pdf</link>
@@ -2382,7 +2620,7 @@
 			<id>260</id>
 			<link>http://www.vldb.org/pvldb/vol7/p329-mahmoud.pdf</link>
 			<title>MaaT: Effective and scalable coordination of distributed transactions in the cloud</title>
-			<authors>Hatem Mahmoud (UC Santa Barbara), Vaibhav Arora* (UCSB), Faisal Nawab (UCSB), Divyakant Agrawal (UCSB), Amr El Abbadi (UCSB)</authors>
+			<authors>Hatem Mahmoud (UC Santa Barbara), Vaibhav Arora* (UCSB), Faisal Nawab (UCSB), Divyakant Agrawal, Amr El Abbadi$$$$$$$)</authors>
 			<abstract>The past decade has witnessed an increasing adoption of cloud database   technology, which provides better scalability, availability,  and fault-tolerance via transparent partitioning and replication,  and automatic load balacing and failover.  However, only a small number of cloud databases provide   strong consistency guarantees for distributed transactions,  despite decades of research on distributed transaction processing,  due to practical challenges that arise in the cloud setting, where   failures are the norm, and human administration is minimal.   For example, dealing with locks left by transactions initiated by failed   machines, and determining a multi-programming level that avoids thrashing   without underutilizing available resources, are some of the challenges   that arise when using lock-based transaction processing mechanisms in the  cloud context.  Even in the case of optimistic concurrency control, most proposals in the   literature deal with distributed validation but still require the database   to acquire locks during two-phase commit when installing updates of   a single transaction on multiple machines.  Very little theoretical work has been done to entirely eliminate the need   for locking in distributed transactions, including locks acquired during   two-phase commit.  In this paper, we re-design optimistic concurrency control to eliminate  any need for locking even for atomic commitment, while handling the practical   issues in earlier theoretical work related to this problem.   We conduct an extensive experimental study to evaluate our approach against  lock-based methods under various setups and workloads, and demonstrate that  our approach provides many practical advantages in the cloud context.</abstract>
 		</paper>
 	</slot>
@@ -2391,9 +2629,9 @@
 		<name>Papers 19: Temporal and Stream Data</name>
 		<location>
 			<room>Diamond 5</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>Papers 19 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>204</id>
 			<link>none</link>
@@ -2435,29 +2673,18 @@
 		<name>Tutorial 5: Uncertain Entity Resolution</name>
 		<location>
 			<room>Bauhinia 1</room>
-			<map>TBD.txt</map>
+			<map>bauhinia.jpg</map>
 		</location>
-		<chair>Tutorial 5 Chair</chair>
-		<paper>
-			<id>56</id>
-			<link>none</link>
-			<title>Uncertain Entity Resolution</title>
-			<authors>Avigdor Gal, Technion – Israel Institute of Technology</authors>
-			<abstract>Entity resolution is a fundamental problem in data integration dealing with the combination of data from different sources to a unified view of the data. Entity resolution is inherently an uncertain process because the decision to map a set of records to the same entity cannot be made with certainty unless these are identical in all of their attributes or have a common key. In the light of recent advancement in data accumulation, management, and analytics landscape (known as big data) the tutorial re-evaluates the entity resolution process and in particular looks at best ways to handle data veracity. The tutorial ties entity resolution with recent advances in probabilistic database research, focusing on sources of uncertainty in the entity resolution process.</abstract>
-			<authorInfo>
-				<photo>Avi_Gal_Brush.jpg</photo>
-				<bio>Avigdor Gal is an associate professor at Faculty of Industrial Engineering &amp; Management, Technion. He is an expert on information systems. His research focuses on effective methods of integrating data from multiple and diverse sources, which affect the way businesses and consumers seek information over the Internet. His current work zeroes in on data integration — the task of providing communication between databases, and connecting such communication to real-world concepts. Another line of research involves the identification of complex events such as flu epidemics, biological attacks, and breaches in computer security, and its application to disaster and crisis management. He has applied his research to European and American projects in government, eHealth, and the integration of business documents. Prof. Gal has published more than 100 papers in leading professional journals (e.g. Journal of the ACM (JACM), ACM Transactions on Database Systems (TODS), IEEE Transactions on Knowledge and Data Engineering (TKDE), ACM Transactions on Internet Technology (TOIT), and the VLDB Journal) and conferences (ICDE, BPM, DEBS, ER, CoopIS) and books (Schema Matching and Mapping). He authored the book Uncertain schema Matching in 2011, serves in various editorial capacities for periodicals including the Journal on Data Semantics (JoDS), Encyclopedia of Database Systems and Computing, and has helped organize professional workshops and conferences nearly every year since 1998. He has won the IBM Faculty Award each year from 2002-2004, several Technion awards for teaching, the 2011-13 Technion-Microsoft Electronic Commerce Research Award, and the 2012 Yanai Award for Excellence in Academic Education, and others.</bio>
-			</authorInfo>
-		</paper>
+		<chair>0</chair>
 	</slot>
 	<slot>
 		<id>D3F1515T1645R7</id>
 		<name>Demo 4</name>
 		<location>
 			<room>Pearl</room>
-			<map>TBD.txt</map>
+			<map>pearl.jpg</map>
 		</location>
-		<chair>Demo 4 Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>1131</id>
 			<link>none</link>
@@ -2538,9 +2765,9 @@
 		<name>BPOE</name>
 		<location>
 			<room>Diamond 1</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>BPOE Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>305</id>
 			<link>http://prof.ict.ac.cn/bpoe_5_vldb</link>
@@ -2553,9 +2780,9 @@
 		<name>PDA@IOT</name>
 		<location>
 			<room>Diamond 2</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>PDA@IOT Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>306</id>
 			<link>none</link>
@@ -2568,9 +2795,9 @@
 		<name>BeRSys</name>
 		<location>
 			<room>Diamond 3</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>BeRSys Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>307</id>
 			<link>http://events.sti2.at/bersys2014/</link>
@@ -2583,9 +2810,9 @@
 		<name>SSW</name>
 		<location>
 			<room>Diamond 4</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>SSW Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>308</id>
 			<link>none</link>
@@ -2598,9 +2825,9 @@
 		<name>TPCTC</name>
 		<location>
 			<room>Diamond 5</room>
-			<map>TBD.txt</map>
+			<map>diamond.jpg</map>
 		</location>
-		<chair>TPCTC Chair</chair>
+		<chair>0</chair>
 		<paper>
 			<id>309</id>
 			<link>none</link>

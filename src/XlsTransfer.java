@@ -9,6 +9,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.ArrayList;
 
 import jxl.Sheet;
 import jxl.Workbook;
@@ -26,123 +27,98 @@ class pinfo {
 	public String title;
 	public String author;
 	public String abstr;
+	public String session;
+	public String link;
 	
-	public pinfo(String title, String author,String abstr)
+	public pinfo(String session,String title, String author,String abstr,String link)
 	{
 		this.title = title;
 		this.author = author;
 		this.abstr = abstr;
+		this.session = session;
+		this.link=link;
 	}
 	
 }
-
 
 public class XlsTransfer {
 	
 	public static void main(String [] args) throws BiffException, IOException, RowsExceededException, WriteException
 	{
+		ArrayList<pinfo> paperlist = new ArrayList<pinfo>();
+		String title,link,abs, session, author;
+		Map<String, String> linkinfo = new HashMap<String,String>();
+		Map<String, String> absinfo = new HashMap<String, String>();
+		BufferedReader reader = new BufferedReader(new FileReader(new File("final_result.txt")));
+		while ((title = reader.readLine()) != null) {
+			link = reader.readLine();
+			linkinfo.put(title, link);
+		}
 		
-		File sourcefile = new File("./papers.xls");
-		File queryFile = new File("./FullProgram_2014.xls");
-		File targetfile = new File("./tmp.xls");
-	    InputStream is = new FileInputStream(sourcefile); 
-	    jxl.Workbook rwb = Workbook.getWorkbook(is);
-	    OutputStream os = new FileOutputStream(targetfile); 
-	    jxl.write.WritableWorkbook wwb = Workbook.createWorkbook(os);
-	    jxl.write.WritableSheet ws = wwb.createSheet("papers", 0);  
-	    Sheet rs1 = rwb.getSheet(0);
-	    Sheet rs2 = rwb.getSheet(1);
-	    Map<String, String> pinfos = new HashMap<String,String>();
-	    File inputFile = new File("./final_result.txt");
-	    FileReader fr = new FileReader(inputFile);
-	    BufferedReader br = new BufferedReader(fr);
-	    String tmp = null;
-	    while((tmp = br.readLine())!=null)
-	    {
-	    	String key = tmp;
-	    	String value = br.readLine();
-	    	pinfos.put(key, value);
-	    }
-	    is = new FileInputStream(queryFile);
-	    rwb = Workbook.getWorkbook(is);
-	    rs1 = rwb.getSheet(1);
-	    int count=0;
-	    for(int i=62;i<227;i++)
-	    {
-	    	String title = rs1.getCell(3,i).getContents();
-	    	if(!pinfos.containsKey(title))
-	    	{
-	    		++count;
-	    		System.out.println(title);
-	    		Label ltitle = new Label(0,i-62,"none");
-	    		ws.addCell(ltitle);
-	    		
-	    	}
-	    	else {
-	    		Label ltitle = new Label(0,i-62,pinfos.get(title));
-	    		ws.addCell(ltitle);
+		jxl.Workbook workbook = Workbook.getWorkbook(new FileInputStream("papers.xls"));
+		Sheet sheet = workbook.getSheet("Research Vol 6");
+		int row = sheet.getRows();
+		for (int i=1; i<sheet.getRows(); ++i) {
+			title = sheet.getCell(1,i).getContents();
+			if (title.equals("eof")) {
+				break;
 			}
-	    }
-	    System.out.println(count);
-	    /*
-	    Map<String,pinfo> pinfos = new HashMap<String, pinfo>();
-	    for(int i=1;i<rs1.getRows()-2;i++)
-	    {
-	    	String title = rs1.getCell(1,i).getContents();
-	    	String abstr = rs1.getCell(3,i).getContents();
-	    	String author = rs1.getCell(4,i).getContents();
-	    	pinfos.put(title, new pinfo(title, author, abstr));
-	    }
-	    for(int i=1;i<rs2.getRows()-1;i++)
-	    {
-	    	String title = rs2.getCell(1,i).getContents();
-	    	String abstr = rs2.getCell(3,i).getContents();
-	    	String author = rs2.getCell(4,i).getContents();
-	    	pinfos.put(title, new pinfo(title, author, abstr));
-	    }
-	    is = new FileInputStream(queryFile);
-	    rwb = Workbook.getWorkbook(is);
-	    rs1 = rwb.getSheet(1);
-	    for(int i=94;i<259;i++)
-	    {
-	    	String title = rs1.getCell(3,i).getContents();
-	    	if(pinfos.containsKey(title))
-	    	{
-	    		Label ltitle = new Label(0,i-94,pinfos.get(title).title);
-		    	Label lauthors = new Label(1,i-94,pinfos.get(title).author);
-		    	Label labstr = new Label(2,i-94,pinfos.get(title).abstr);
-		    	ws.addCell(ltitle);
-		    	ws.addCell(labstr);
-		    	ws.addCell(lauthors);
-	    	}
-	    }
-	    */
-	    /*
-	    for(int i=0;i<rs.getRows();i++)
-	    {
-	    	
-	    	String id = rs.getCell(0, i).getContents();
-	    	String title = rs.getCell(1,i).getContents();
-	    	String abstr = rs.getCell(2,i).getContents();
-	    	String authors = rs.getCell(3,i).getContents();
-	    	Label lid = new Label(0, i, id);
-	    	Label ltitle = new Label(2,i,title);
-	    	Label labstr = new Label(4,i,abstr);
-	    	Label llink = new Label(1,i,"none");
-	    	Label lauthors = new Label(3,i,authors);
-	    	ws.addCell(lid);
-	    	ws.addCell(ltitle);
-	    	ws.addCell(labstr);
-	    	ws.addCell(llink);
-	    	ws.addCell(lauthors);
-	    	
-	    }
-	    */
+			abs   = sheet.getCell(3,i).getContents();
+			absinfo.put(title, abs);
+		}
+		sheet = workbook.getSheet("Research Vol 7");
+		for (int r = 1; r<sheet.getRows(); ++r) {
+			title = sheet.getCell(1,r).getContents();
+			if (title.equals("eof")) {
+				break;
+			}
+			abs   = sheet.getCell(3,r).getContents();
+			absinfo.put(title, abs);
+		}
+		//sheet = workbook.getSheet(arg0)
+		workbook.close();
+		workbook = Workbook.getWorkbook(new FileInputStream("program.xls"));
+		sheet = workbook.getSheet("Sheet4");
+		for (int i=1; i<sheet.getRows(); ++i) {
+			session = sheet.getCell(0,i).getContents();
+			if (session.equals("eof")) break;
+			title = sheet.getCell(1,i).getContents();
+			author = sheet.getCell(2,i).getContents();
+			abs = absinfo.get(title);
+			link = linkinfo.get(title);
+			if(link == null) link = "none";
+			paperlist.add(new pinfo("Papers "+session, title, author, abs,link));
+		}
+		/*
+		System.out.println(paperlist.size());
+		for(pinfo p: paperlist) {
+			System.out.println(p.session);
+			System.out.println(p.link);
+		}*/
 		
-	    wwb.write(); 
+		jxl.write.WritableWorkbook wwb = Workbook.createWorkbook(new File("tmp.xls"));	
+		jxl.write.WritableSheet ws = wwb.createSheet("Test Shee 1", 0);
+		jxl.write.Label label_session, label_id, label_title, label_link, label_author,label_abstract;
+		
+		int c = 96;
+		for(int i = 0; i<paperlist.size(); ++i) {
+			pinfo t = paperlist.get(i);
+			label_session = new jxl.write.Label(0, i, t.session);
+			label_id      = new jxl.write.Label(1, i, (new Integer(c)).toString());
+			c=c+1;
+			label_link    = new jxl.write.Label(2, i, t.link);
+			label_title   = new jxl.write.Label(3, i, t.title);
+			label_author  = new jxl.write.Label(4, i, t.author);
+			label_abstract = new jxl.write.Label(5, i, t.abstr);
+			ws.addCell(label_session);
+			ws.addCell(label_id);
+			ws.addCell(label_title);
+			ws.addCell(label_link);
+			ws.addCell(label_author);
+			ws.addCell(label_abstract);
+		}
+	    wwb.write();
 	    wwb.close();
-	    os.close();
-	    
 	}
 
 }

@@ -101,6 +101,7 @@ public class MenuGenerator
         printType("Tutorials", buf, eventbuf);
         printType("Research", buf, eventbuf);
         printType("Industry", buf, eventbuf);
+        printType("Local Industry", buf, eventbuf);
         printType("Demos", buf, eventbuf);
         printType("Business & Awards", buf, eventbuf);
         printType("Social Events", buf, eventbuf);
